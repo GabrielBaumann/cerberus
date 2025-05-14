@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seções com Vídeo Hero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Add modern thin font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            font-weight: 300; /* Default to light weight */
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <div class="relative">
+        <!-- Primeira seção (hero com vídeo) -->
+        <section class="min-h-screen bg-white relative overflow-hidden">
+            <!-- Vídeo de fundo em loop -->
+            <div class="absolute inset-0 z-0">
+                <video autoplay muted loop class="w-full h-full object-cover">
+                    <source src="/assets/video2.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos HTML5.
+                </video>
+                <!-- Overlay para melhor legibilidade -->
+                <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+            </div>
+            
+            <!-- Header -->
+            <header class="relative z-10 container mx-auto px-12 py-6">
+                <div class="flex justify-between items-center">
+                    <div class="text-3xl font-normal text-white">Cerberus</div>
+                    <nav class="hidden md:flex space-x-8">
+                        <a href="#" class="text-white hover:text-gray-200 font-normal text-xl">Início</a>
+                        <a href="#" class="text-white hover:text-gray-200 font-normal text-xl">Sobre</a>
+                        <a href="#" class="text-white hover:text-gray-200 font-normal text-xl">Serviços</a>
+                        <a href="#" class="text-white hover:text-gray-200 font-normal text-xl">Contato</a>
+                    </nav>
+                    <button class="md:hidden text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </header>
+            
+            <!-- Conteúdo Hero -->
+            <div class="relative z-10 container mx-auto px-12 flex flex-col justify-center min-h-[80vh]">
+                <div class="max-w-4xl">
+                    <h1 class="text-5xl md:text-8xl font-light text-white mb-6 leading-tight">
+                        Transforme sua visão em realidade
+                    </h1>
+                    <p class="text-2xl text-white mb-8 opacity-90 font-extralight">
+                        Soluções inovadoras <br>para impulsionar seu <br>negócio no mundo digital.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="px-8 py-2 bg-white text-black text-xl font-semibold rounded-full hover:bg-gray-100 transition duration-300">
+                            Quero contratar o serviço
+                        </button>
+                        <button class="px-8 py-2 border-2 border-white text-white text-xl font-semibold rounded-full hover:bg-white hover:text-black transition duration-300">
+                            Saiba mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Segunda seção (preta com bordas arredondadas) -->
+        <section class="min-h-screen bg-gray-950 rounded-t-[60px] relative z-10 -mt-20 pt-24 border-t border-gray-900">
+            <div class="container mx-auto px-12 py-12 text-white">
+                <h2 class="text-5xl md:text-6xl font-light mb-6 leading-tight">Nossos projetos transformam ideias <br>em negócios reais</h2>
+                <p class="text-5xl md:text-6xl opacity-60 font-extralight mb-16">Cada detalhe é pensado para criar experiências <br>únicas e memoráveis</p>
+                
+                
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 mb-16">
+    <!-- Projeto 1 -->
+    <div class="group relative overflow-hidden rounded-2xl aspect-[4/3]">
+        <img src="/assets/dash.jpg" alt="Projeto 1" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-end p-6">
+            <div class="translate-y-4 group-hover:translate-y-0 transition duration-300">
+                <h3 class="text-2xl font-light text-white mb-1">E-commerce</h3>
+                <p class="text-white opacity-0 group-hover:opacity-80 transition duration-300 font-extralight">Plataforma de vendas integrada</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Projeto 2 -->
+    <div class="group relative overflow-hidden rounded-2xl aspect-[4/3]">
+        <img src="/assets/dash.jpg" alt="Projeto 2" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-end p-6">
+            <div class="translate-y-4 group-hover:translate-y-0 transition duration-300">
+                <h3 class="text-2xl font-light text-white mb-1">Aplicativo Mobile</h3>
+                <p class="text-white opacity-0 group-hover:opacity-80 transition duration-300 font-extralight">Experiência do usuário premium</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Projeto 3 -->
+    <div class="group relative overflow-hidden rounded-2xl aspect-[4/3]">
+        <img src="/assets/dash.jpg" alt="Projeto 3" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition duration-300 flex items-end p-6">
+            <div class="translate-y-4 group-hover:translate-y-0 transition duration-300">
+                <h3 class="text-2xl font-light text-white mb-1">Sistema Web</h3>
+                <p class="text-white opacity-0 group-hover:opacity-80 transition duration-300 font-extralight">Dashboard inteligente</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center">
+    <button class="px-8 py-3 border border-white text-white text-lg font-semibold rounded-full hover:bg-white hover:text-black transition duration-300">
+        Ver todos os projetos
+    </button>
+</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
