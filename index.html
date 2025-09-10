@@ -20,102 +20,113 @@
         }
     </style>
 </head>
-<body class="font-['Avgardo'] font-normal bg-white text-white">
-    <!-- Seção Hero -->
-    <section class="relative min-h-screen overflow-hidden">
-        <!-- Vídeo de fundo -->
-        <div class="absolute inset-0 z-0">
-            <video autoplay muted loop class="w-full h-full object-cover">
-                <source src="./assets/video.mp4" type="video/mp4">
-                Seu navegador não suporta vídeos HTML5.
-            </video>
-            <div class="absolute inset-0 bg-black bg-opacity-30"></div>
-        </div>
+<body class="font-['Avgardo'] font-normal bg-gray-900 text-white">
+    <div class="flex flex-col">
+        <header class="bg-gradient-to-r from-gray-950 to-gray-950 via-gray-800 p-1 text-sm text-gray-100 flex justify-center gap-2">Faz parte da equipe? Acesse a <span class="underline cursor-pointer font-semibold">Área Admin</span></header>
+        <!-- Seção Hero -->
+        <section class="relative min-h-screen overflow-hidden">
+            <!-- Vídeo de fundo -->
+            <div class="absolute inset-0 z-0">
+                <!-- <video autoplay muted loop class="w-full h-full object-cover">
+                    <source src="./assets/video.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos HTML5.
+                </video> -->
+                <img src="./assets/cover.jpg" alt="cover" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black bg-opacity-45"></div>
+            </div>
         
-        <!-- Header -->
-        <header class="relative z-10 container mx-auto px-6 sm:px-12 py-6">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center">
-                    <div class="mr-4 w-12 h-12 sm:w-16 sm:h-16">
-                        <img src="./assets/cerberus.png" alt="Cerberus Logo" class="w-full h-full object-contain">
+            <!-- Header -->
+            <header class="relative z-10 container mx-auto px-6 sm:px-12 py-6">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <div class="mr-4 w-12 h-12 sm:w-16 sm:h-16">
+                            <img src="./assets/cerberus.png" alt="Cerberus Logo" class="w-full h-full object-contain">
+                        </div>
+                        <div class="text-xl sm:text-2xl font-normal text-white font-['Xirod']">Cerberus</div>
                     </div>
-                    <div class="text-xl sm:text-2xl font-normal text-white font-['Xirod']">Cerberus</div>
+                    <nav class="hidden md:flex items-center space-x-4 lg:space-x-8">
+                        <a href="#" class="text-white hover:text-gray-200 text-lg lg:text-xl">Início</a>
+                        <a href="#" class="text-white hover:text-gray-200 text-lg lg:text-xl">Sobre</a>
+                        <a href="#" class="text-white hover:text-gray-200 text-lg lg:text-xl">Projetos</a>
+                        <a href="#" class="text-white hover:text-gray-200 text-lg lg:text-xl">Integrantes</a>
+                        <a href="#" class="px-4 py-1 lg:px-6 lg:py-2 bg-white text-gray-900 text-lg lg:text-xl font-semibold rounded-full hover:bg-gray-100 transition duration-300">Contato</a>
+                    </nav>
+                    <button class="md:hidden text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
                 </div>
-                <nav class="hidden md:flex items-center space-x-4 lg:space-x-8">
-                    <a href="#" class="text-white hover:text-gray-200 text-lg lg:text-xl">Início</a>
-                    <a href="#" class="text-white hover:text-gray-200 text-lg lg:text-xl">Sobre</a>
-                    <a href="#" class="text-white hover:text-gray-200 text-lg lg:text-xl">Serviços</a>
-                    <a href="#" class="px-4 py-1 lg:px-6 lg:py-2 bg-white text-gray-900 text-lg lg:text-xl font-semibold rounded-full hover:bg-gray-100 transition duration-300">Contato</a>
-                </nav>
-                <button class="md:hidden text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                    </svg>
-                </button>
-            </div>
-        </header>
+            </header>
         
-        <!-- Conteúdo Hero -->
-        <div class="relative z-10 container mx-auto px-6 sm:px-12 flex flex-col justify-center 2xl:min-h-[calc(100vh-90px)] min-h-[100vh]">
-            <div class="max-w-4xl">
-                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light mb-8 md:mb-12 lg:mb-20 leading-tight">
-                    <!-- Transforme sua visão em realidade (em negocio, projetos, futuro, realidade) -->
-                     Transforme sua visão em 
-                        <span id="negocio" class="word hidden">negócio</span>
-                        <span id="projetos" class="word hidden">projetos</span>
-                        <span id="futuro" class="word hidden">futuro</span>
-                        <span id="realidade" class="word hidden">realidade</span>
-                </h1>
-                <p class="text-xl sm:text-2xl opacity-90 mb-6 md:mb-8 font-extralight">
-                    Soluções inovadoras <br>para impulsionar seu <br>negócio no mundo digital.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                    <button class="px-6 py-1 sm:px-8 sm:py-2 bg-white text-black text-lg sm:text-xl font-semibold rounded-full hover:bg-gray-100 transition duration-300">
-                        Quero contratar
-                    </button>
-                    <button class="px-6 py-1 sm:px-8 sm:py-2 border-2 border-white text-white text-lg sm:text-xl font-semibold rounded-full hover:bg-white hover:text-black transition duration-300">
-                        Saiba mais
-                    </button>
+            <!-- Conteúdo Hero -->
+            <div class="relative z-10 container mx-auto px-6 sm:px-12 flex flex-col justify-center -mt-8 mb-10 2xl:min-h-[calc(100vh-90px)] min-h-[100vh]">
+                <div class="max-w-4xl">
+                    <h1 class="[text-shadow:_2px_2px_4px_rgb(0_0_0_/_50%)] text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light mb-8 md:mb-8 2xl:mb-20 leading-tight">
+                        <!-- Transforme sua visão em realidade (em negocio, projetos, futuro, realidade) -->
+                         Transformamos ideias em
+                            <span id="negocio" class="word hidden ">negócios</span>
+                            <span id="projetos" class="word hidden ">projetos</span>
+                            <span id="futuro" class="word hidden ">futuro</span>
+                            <span id="realidade" class="word hidden ">realidade</span>
+                    </h1>
+                    <p class="text-xl sm:text-2xl opacity-90 mb-6 md:mb-4 2xl:mb-8 font-extralight">
+                        Soluções inovadoras <br>para impulsionar <br>negócios no mundo digital.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                        <button class="px-6 py-1 sm:px-8 sm:py-2 bg-white text-black text-lg sm:text-xl font-semibold rounded-full hover:bg-gray-100 transition duration-300">
+                            Contato
+                        </button>
+                        <button class="px-6 py-1 sm:px-8 sm:py-2 border-2 border-white text-white text-lg sm:text-xl font-semibold rounded-full hover:bg-white hover:text-black transition duration-300">
+                            Saiba mais
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     
-    <!-- Seção de Projetos -->
-    <section class="bg-gray-950 rounded-t-3xl sm:rounded-t-[60px] relative z-10 -mt-16 sm:-mt-20 pt-16 sm:pt-24 border-t border-gray-900">
+    <!-- about section -->
+    <section class="bg-gray-900 rounded-t-3xl sm:rounded-t-[60px] relative z-10 -mt-20 sm:-mt-40 pt-16 sm:pt-24 border-t border-gray-900">
         <div class="container mx-auto px-6 sm:px-12 py-12">
-            <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mb-4 sm:mb-6 leading-tight">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mb-4 sm:mb-6 leading-tight hover:text-orange-500 transition-all duration-300 cursor-default">
                 Nossos projetos transformam ideias <br>em negócios reais
             </h2>
             <p class="text-xl sm:text-2xl md:text-3xl lg:text-4xl opacity-60 font-extralight mb-8 sm:mb-16">
-                Cada detalhe é pensado para criar experiências <br>únicas e memoráveis
+                somos uma equipe de desenvolvedores e gestores que se uniram com objetivo de usar a tecnologia para facilitar processos e criar soluções
             </p>
             
             <!-- Container das 3 imagens (larga-fina-larga) -->
             <div class="grid grid-cols-1 md:grid-cols-7 gap-4 mt-8 sm:mt-12 mb-12 sm:mb-16">
                 <!-- Primeira imagem larga -->
-                <div class="md:col-span-5 h-64 sm:h-80 md:h-96 lg:h-[400px] rounded-xl overflow-hidden">
+                <div class="md:col-span-5 h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-xl overflow-hidden">
                     <div class="w-full h-full bg-gray-800 flex items-center justify-center">
-                        <img src="./assets/pexels-goumbik-574071.jpg" alt="">
+                        <img src="./assets/grupo2.jpg" alt="">
                     </div>
                 </div>
-                <div class="md:col-span-2 h-64 sm:h-80 md:h-96 lg:h-[400px] rounded-xl overflow-hidden">
+                <div class="md:col-span-2 h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-xl overflow-hidden">
                     <div class="w-full h-full bg-gray-700 flex items-center justify-center">
-                        <img src="./assets/pexels-flodahm-699459.jpg" alt="">
+                        <img src="./assets/grupo3.jpg" alt="" class="object-cover w-full h-full">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <div class="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-950 py-24 sm:py-[150px]">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col gap-10">
+            <h2 class="text-center text-xl md:text-8xl font-semibold text-whiteuppercase hover:text-green-400 transition-all duration-300 cursor-default">"A melhor ideia do mundo é a melhor ideia para o Mundo."</h2>
+            <h2 class="text-center text-xl md:text-5xl font-semibold text-whiteuppercase italic">Platão</h2>
+        </div>
+    </div>
 
-    <!-- Seção de Abordagem -->
-    <section class="bg-gray-950">
+    <!-- projects section -->
+    <section class="bg-gradient-to-b from-gray-900 via-gray-900 to-black relative z-10 -mt-[60px] mb-10 2xl:min-h-[calc(100vh-90px)] min-h-[100vh] w-full rounded-t-[60px]">
         <div class="container mx-auto px-6 sm:px-12 py-20">
             <div class="flex flex-col lg:flex-row justify-between items-start mb-12 lg:mb-24">
                 <div class="lg:w-2/3 mb-8 lg:mb-0">
                     <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mb-4 sm:mb-6 leading-tight">
-                        Nossa abordagem de tecnologia <br>cria valor real
+                        NOSSOS PROJETOS
                     </h2>
                 </div>
                 <div class="lg:w-1/3">
@@ -125,48 +136,162 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Item 1 -->
-                <div class="group flex flex-col items-center">
-                    <div class="w-full h-48 sm:h-64 md:h-80 overflow-hidden rounded-xl mb-4">
-                        <div class="w-full h-full bg-gray-800 flex items-center justify-center">
-                            <img src="./assets/pexels-flodahm-699459.jpg" alt="">
-                        </div>
-                    </div>
-                    <h3 class="text-xl sm:text-2xl mb-2 text-center">Estratégia Digital</h3> 
-                    <p class="text-gray-400 text-sm sm:text-base font-extralight text-center max-w-xs">
-                        Planejamento personalizado para alinhar tecnologia com seus objetivos de negócio.
+            <div class="flex flex-col gap-12">
+                <!-- project 1 -->
+                <div class="flex flex-col items-center">
+                    <h3 class="text-3xl sm:text-4xl md:text-5xl 2xl:text-7xl font-semibold mb-4 sm:mb-6 leading-tight uppercase">SINE 360</h3>
+                    <p class="text-xl max-w-[1300px] text-center sm:text-2xl md:text-3xl lg:text-3xl opacity-60 font-extralight mb-8 sm:mb-16">
+                        Solução web responsiva para mobile que monitora, gerencia e gera relatórios dos processos internos do SINE. Atualmente está em uso no SINE de Canaã Dos Carajás-PA. Com objetivo de expandi-lo para municípios vizinhos da região carajás.
                     </p>
+                    <div class="flex flex-col justify-center md:flex-row gap-4 w-full overflow-hidden rounded-md mb-4">
+
+                        <div class="md:w-full 2xl:w-[1000px] bg-gray-800 overflow-hidden rounded-xl items-center justify-center">
+                            <img src="./assets/sine.jpeg" alt="project1" class="h-full w-full object-cover"> 
+                        </div>
+
+                        <div class="md:w-[300px] 2xl:w-[250px] bg-gray-800 overflow-hidden rounded-xl items-center justify-center">
+                            <img src="./assets/sine2.png" alt="project1" class="h-full w-full object-cover"> 
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- project 2 -->
+                <div class="flex flex-col items-center mt-[100px]">
+                    <h3 class="text-3xl sm:text-4xl md:text-5xl 2xl:text-7xl font-semibold mb-4 sm:mb-6 leading-tight uppercase">oficio facil</h3>
+                    <p class="text-xl text-center max-w-[1300px] sm:text-2xl md:text-3xl lg:text-3xl opacity-60 font-extralight mb-8 sm:mb-16">
+                        Um sistema web que controla intervalos numéricos de ofícios entre diversos setores. Atualmente está sendo utilizado pela Secretaria Municipal de Desenvolvimento Social de Canaã Dos Carajás-PA.
+                    </p>
+                    <div class="flex flex-col justify-center md:flex-row gap-4 w-full overflow-hidden rounded-md mb-4">
+
+                        <div class="md:w-[300px] 2xl:w-[250px] bg-gray-800 overflow-hidden rounded-xl items-center justify-center">
+                            <img src="./assets/oficio2.png" alt="project1" class="h-full w-full object-cover"> 
+                        </div>
+
+                        <div class="md:w-full 2xl:w-[1000px] bg-gray-800 overflow-hidden rounded-xl items-center justify-center">
+                            <img src="./assets/oficiofacil.png" alt="project1" class="h-full w-full object-cover"> 
+                        </div>
+
+                    </div>
                 </div>
                 
-                <!-- Item 2 -->
-                <div class="group flex flex-col items-center">
-                    <div class="w-full h-48 sm:h-64 md:h-80 overflow-hidden rounded-xl mb-4">
-                        <div class="w-full h-full bg-gray-800 flex items-center justify-center">
-                            <img src="./assets/pexels-flodahm-699459.jpg" alt="">
-                        </div>
-                    </div>
-                    <h3 class="text-xl sm:text-2xl mb-2 text-center">Design Impactante</h3>
-                    <p class="text-gray-400 text-sm sm:text-base font-extralight text-center max-w-xs">
-                        Interfaces intuitivas que encantam usuários e convertem visitantes.
-                    </p>
-                </div>
-                
-                <!-- Item 3 -->
-                <div class="group flex flex-col items-center">
-                    <div class="w-full h-48 sm:h-64 md:h-80 overflow-hidden rounded-xl mb-4">
-                        <div class="w-full h-full bg-gray-800 flex items-center justify-center">
-                            <img src="./assets/pexels-flodahm-699459.jpg" alt="">
-                        </div>
-                    </div>
-                    <h3 class="text-xl sm:text-2xl mb-2 text-center">Tecnologia Avançada</h3>
-                    <p class="text-gray-400 text-sm sm:text-base font-extralight text-center max-w-xs">
-                        Soluções robustas e escaláveis para impulsionar seu crescimento.
-                    </p>
-                </div>
             </div>
         </div>
     </section>
+
+    <div class="bg-gradient-to-b from-black via-gray-800 to-gray-950 py-24 sm:py-[150px] -mt-12 ">
+        <div class="flex flex-col gap-12 mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="flex justify-end text-right items-center">
+                <h1 class="text-white text-xl md:text-6xl font-semibold hover:text-yellow-500 transition-all duration-300 cursor-default">"Não se gerencia o que não se mede,<br> não se mede o que não se define,<br> não se define o que não se entende<br> e não há sucesso no que não se gerencia"</h1>
+            </div>
+            <div class="">
+                <h2 class="text-right text-md md:text-5xl font-semibold text-whiteuppercase italic">William E.Deming</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- people  -->
+    <section class="bg-gradient-to-b from-gray-900 via-gray-700 to-gray-900 relative z-10 -mt-[60px] mb-10 2xl:min-h-[calc(100vh-90px)] min-h-[100vh] w-full rounded-t-[60px]">
+        <div class="container mx-auto px-6 sm:px-16 py-20">
+            <div class="flex flex-col lg:flex-row justify-between items-start mb-12 lg:mb-24">
+                <div class="lg:w-2/3 mb-8 lg:mb-0">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mb-4 sm:mb-6 leading-tight">
+                        NOSSA EQUIPE
+                    </h2>
+                </div>
+                <div class="lg:w-1/3">
+                    <p class="text-base sm:text-lg lg:text-xl opacity-60 font-extralight">
+                        Entre desenvolvedores e gestores, cada um de nós possui habilidades que se complementam, contruibuindo para criar soluções realmente aplicáveis por meio da tacnologia.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-8 md:gap-12">
+                <!-- people 1 -->
+                <div class="flex flex-col md:flex-row bg-gradient-to-br from-gray-800 via-gray-700 to-gray-800 gap-7 items-center p-5 md:py-12 border border-gray-500 rounded-xl">
+                    <div class="flex flex-col">
+                        <h3 class="text-3xl sm:text-4xl md:text-5xl 2xl:text-7xl font-semibold mb-4 sm:mb-6 leading-tight uppercase">Victor Lara</h3>
+                        <p class="text-xl max-w-[1300px] sm:text-2xl md:text-3xl lg:text-3xl opacity-60 font-extralight mb-8 sm:mb-16">
+                        Gestor de operações, Analista de Dados e Líder Geral
+                        </p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        <div class="flex items-center gap-4 mt-5">
+                            <a href="#" class="p-3 rounded-full border border-white cursor-pointer hover:bg-blue-600 hover:text-white text-blue-500 transition-all duration-300">
+                                <img src="./assets/linkedin.png" alt="linkedin" srcset="" class="size-6 text-white">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden rounded-md">
+                        <img src="./assets/victor.jpg" alt="victor" class="w-full h-full object-cover">
+                    </div> 
+                </div>
+
+                <!-- people 2 -->
+                <div class="flex flex-col md:flex-row bgbg-gradient-to-br from-gray-800 via-gray-700 to-gray-800 gap-7 items-center p-5 md:py-12 border border-gray-500 rounded-xl">
+                    <div class="hidden md:flex overflow-hidden rounded-md">
+                        <img src="./assets/lucas.jpg" alt="victor" class="w-full h-full object-cover">
+                    </div> 
+                    <div class="flex flex-col">
+                        <h3 class="text-3xl sm:text-4xl md:text-5xl 2xl:text-7xl font-semibold mb-4 sm:mb-6 leading-tight uppercase">Lucas Silva</h3>
+                        <p class="text-xl max-w-[1300px] sm:text-2xl md:text-3xl lg:text-3xl opacity-60 font-extralight mb-8 sm:mb-16">
+                        Gestor de operações, Analista de Dados e Líder Geral
+                        </p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        <div class="flex items-center gap-4 mt-5">
+                            <a href="#" class="p-3 rounded-full border border-white cursor-pointer hover:bg-blue-600 hover:text-white text-blue-500 transition-all duration-300">
+                                <img src="./assets/linkedin.png" alt="linkedin" srcset="" class="size-6 text-white">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex md:hidden overflow-hidden rounded-md">
+                        <img src="./assets/lucas.jpg" alt="victor" class="w-full h-full object-cover">
+                    </div> 
+                </div>
+                <!-- people 3 -->
+                <div class="flex flex-col md:flex-row bg-gradient-to-br from-gray-800 via-gray-700 to-gray-800 gap-7 items-center p-5 md:py-12 border border-gray-500 rounded-xl">
+                    <div class="flex flex-col">
+                        <h3 class="text-3xl sm:text-4xl md:text-5xl 2xl:text-7xl font-semibold mb-4 sm:mb-6 leading-tight uppercase">Tiago Silva</h3>
+                        <p class="text-xl max-w-[1300px] sm:text-2xl md:text-3xl lg:text-3xl opacity-60 font-extralight mb-8 sm:mb-16">
+                        Gestor de operações, Analista de Dados e Líder Geral
+                        </p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        <div class="flex items-center gap-4 mt-5">
+                            <a href="#" class="p-3 rounded-full border border-white cursor-pointer hover:bg-blue-600 hover:text-white text-blue-500 transition-all duration-300">
+                                <img src="./assets/linkedin.png" alt="linkedin" srcset="" class="size-6 text-white">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden rounded-md">
+                        <img src="./assets/tiago.enc" alt="victor" class="w-full h-full object-cover">
+                    </div> 
+                </div>
+
+                <!-- people 4 -->
+                <div class="flex flex-col md:flex-row bg-gradient-to-br from-gray-800 via-gray-700 to-gray-800 gap-7 items-center p-5 md:py-12 border border-gray-500 rounded-xl">
+                    <div class="hidden md:flex overflow-hidden rounded-md">
+                        <img src="./assets/gabriel3.jpg" alt="gabriel" class="w-full h-full object-cover">
+                    </div> 
+                    <div class="flex flex-col">
+                        <h3 class="text-3xl sm:text-4xl md:text-5xl 2xl:text-7xl font-semibold mb-4 sm:mb-6 leading-tight uppercase">Gabriel Baumann</h3>
+                        <p class="text-xl max-w-[1300px] sm:text-2xl md:text-3xl lg:text-3xl opacity-60 font-extralight mb-8 sm:mb-16">
+                        Gestor de operações, Analista de Dados e Líder Geral
+                        </p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        <div class="flex items-center gap-4 mt-5">
+                            <a href="#" class="p-3 rounded-full border border-white cursor-pointer hover:bg-blue-600 hover:text-white text-blue-500 transition-all duration-300">
+                                <img src="./assets/linkedin.png" alt="linkedin" srcset="" class="size-6 text-white">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex md:hidden overflow-hidden rounded-md">
+                        <img src="./assets/gabriel3.jpg" alt="gabriel" class="w-full h-full object-cover">
+                    </div> 
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 
     <!-- Seção de Experiências -->
     <section class="bg-gray-950">
