@@ -144,7 +144,7 @@
     </div>
 
     <!-- projects -->
-    <section class="bg-gradient-to-b from-gray-950 via-gray-900 to-black relative z-10 -mt-[60px] mb-10 2xl:min-h-[calc(100vh-90px)] min-h-[100vh] w-full rounded-t-[60px]">
+    <section class="bg-black relative z-10 -mt-[60px] mb-10 2xl:min-h-[calc(100vh-90px)] min-h-[100vh] w-full rounded-t-[60px]">
         <div class="container mx-auto px-6 sm:px-12 py-20">
             <div class="flex flex-col lg:flex-row justify-between items-start mb-12 lg:mb-24">
                 <div class="lg:w-2/3 mb-8 lg:mb-0">
@@ -158,49 +158,101 @@
                     </p>
                 </div>
             </div>
-
-            <div class="flex flex-col gap-12">
-                <!-- project 1 -->
-                <div class="flex flex-col items-center reveal">
-                    <h3 class="text-3xl sm:text-4xl md:text-5xl 2xl:text-7xl font-semibold mb-4 sm:mb-6 leading-tight uppercase">SINE 360</h3>
-                    <p class="text-xl max-w-[1300px] text-center sm:text-2xl md:text-3xl lg:text-3xl opacity-60 font-extralight mb-8 sm:mb-16">
-                        Solução web responsiva para mobile que monitora, gerencia e gera relatórios dos processos internos do SINE. Atualmente está em uso no SINE de Canaã Dos Carajás-PA. Com objetivo de expandi-lo para municípios vizinhos da região carajás.
-                    </p>
-                    <div class="flex flex-col justify-center md:flex-row gap-4 w-full overflow-hidden rounded-md mb-4">
-
-                        <div class="md:w-full 2xl:w-[1000px] bg-gray-800 overflow-hidden rounded-xl items-center justify-center reveal">
-                            <img src="./assets/sine.jpeg" alt="project1" class="h-full w-full object-cover"> 
+        </div>
+        <!-- SINE -->
+        <div class="bg-gradient-to-b from-black via-gray-900 to-black overflow-hidden py-24 sm:py-32">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                <div class="lg:pt-4 lg:pr-8">
+                    <div class="lg:max-w-lg">
+                    <h2 class="text-base/7 font-semibold text-indigo-400">Deploy faster</h2>
+                    <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">SINE 360</p>
+                    <p class="mt-6 text-lg/8 text-gray-300">Solução web responsiva para mobile que monitora, gerencia e gera relatórios dos processos internos do SINE. Atualmente está em uso no SINE de Canaã Dos Carajás-PA. Com objetivo de expandi-lo para municípios vizinhos da região carajás.</p>
+                    <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-400 lg:max-w-none">
+                        <div class="relative pl-9">
+                        <dt class="inline font-semibold text-white">
+                            <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-indigo-400">
+                            <path d="M5.5 17a4.5 4.5 0 0 1-1.44-8.765 4.5 4.5 0 0 1 8.302-3.046 3.5 3.5 0 0 1 4.504 4.272A4 4 0 0 1 15 17H5.5Zm3.75-2.75a.75.75 0 0 0 1.5 0V9.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0l-3.25 3.5a.75.75 0 1 0 1.1 1.02l1.95-2.1v4.59Z" clip-rule="evenodd" fill-rule="evenodd" />
+                            </svg>
+                            Push to deploy.
+                        </dt>
+                        <dd class="inline">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
                         </div>
-
-                        <div class="md:w-[300px] 2xl:w-[250px] bg-gray-800 overflow-hidden rounded-xl items-center justify-center reveal">
-                            <img src="./assets/sine2.png" alt="project1" class="h-full w-full object-cover"> 
+                        <div class="relative pl-9">
+                        <dt class="inline font-semibold text-white">
+                            <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-indigo-400">
+                            <path d="M10 1a4.5 4.5 0 0 0-4.5 4.5V9H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-.5V5.5A4.5 4.5 0 0 0 10 1Zm3 8V5.5a3 3 0 1 0-6 0V9h6Z" clip-rule="evenodd" fill-rule="evenodd" />
+                            </svg>
+                            SSL certificates.
+                        </dt>
+                        <dd class="inline">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</dd>
                         </div>
-
+                        <div class="relative pl-9">
+                        <dt class="inline font-semibold text-white">
+                            <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-indigo-400">
+                            <path d="M4.632 3.533A2 2 0 0 1 6.577 2h6.846a2 2 0 0 1 1.945 1.533l1.976 8.234A3.489 3.489 0 0 0 16 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234Z" />
+                            <path d="M4 13a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4Zm11.24 2a.75.75 0 0 1 .75-.75H16a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75h-.01a.75.75 0 0 1-.75-.75V15Zm-2.25-.75a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75h-.01Z" clip-rule="evenodd" fill-rule="evenodd" />
+                            </svg>
+                            Database backups.
+                        </dt>
+                        <dd class="inline">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</dd>
+                        </div>
+                    </dl>
                     </div>
                 </div>
+                <img width="1000" src="./assets/sine.jpeg" alt="Product screenshot" class="w-3xl max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-228 md:-ml-4 lg:-ml-0" />
+                </div>
+            </div>
+        </div>
 
-                <!-- project 2 -->
-                <div class="flex flex-col items-center mt-[100px] reveal">
-                    <h3 class="text-3xl sm:text-4xl md:text-5xl 2xl:text-7xl font-semibold mb-4 sm:mb-6 leading-tight uppercase">oficio facil</h3>
-                    <p class="text-xl text-center max-w-[1300px] sm:text-2xl md:text-3xl lg:text-3xl opacity-60 font-extralight mb-8 sm:mb-16">
-                        Um sistema web que controla intervalos numéricos de ofícios entre diversos setores. Atualmente está sendo utilizado pela Secretaria Municipal de Desenvolvimento Social de Canaã Dos Carajás-PA.
-                    </p>
-                    <div class="flex flex-col justify-center md:flex-row gap-4 w-full overflow-hidden rounded-md mb-4">
-
-                        <div class="md:w-[300px] 2xl:w-[250px] bg-gray-800 overflow-hidden rounded-xl items-center justify-center reveal">
-                            <img src="./assets/oficio2.png" alt="project1" class="h-full w-full object-cover"> 
+        <!-- OFICIO FACIL -->
+        <div class="bg-gradient-to-b from-black via-gray-900 to-black overflow-hidden py-24 sm:py-32">
+            <div class="px-6 lg:px-8">
+                <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-[200px] gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                    <img width="1000" src="./assets/oficiofacil.png" alt="oficiofacil" class="hidden md:flex w-3xl max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-228 -ml-[700px] md:-ml-[300px] 2xl:-ml-[80px]" />
+                <div class="lg:pt-4 lg:pl-8">
+                    <div class="lg:max-w-lg">
+                    <h2 class="text-base/7 font-semibold text-indigo-400">Deploy faster</h2>
+                    <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">OFICIO FACIL</p>
+                    <p class="mt-6 text-lg/8 text-gray-300">Um sistema web que controla intervalos numéricos de ofícios entre diversos setores. Atualmente está sendo utilizado pela Secretaria Municipal de Desenvolvimento Social de Canaã Dos Carajás-PA.</p>
+                    <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-400 lg:max-w-none">
+                        <div class="relative pl-9">
+                        <dt class="inline font-semibold text-white">
+                            <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-indigo-400">
+                            <path d="M5.5 17a4.5 4.5 0 0 1-1.44-8.765 4.5 4.5 0 0 1 8.302-3.046 3.5 3.5 0 0 1 4.504 4.272A4 4 0 0 1 15 17H5.5Zm3.75-2.75a.75.75 0 0 0 1.5 0V9.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0l-3.25 3.5a.75.75 0 1 0 1.1 1.02l1.95-2.1v4.59Z" clip-rule="evenodd" fill-rule="evenodd" />
+                            </svg>
+                            Push to deploy.
+                        </dt>
+                        <dd class="inline">Um sistema web que controla intervalos numéricos de ofícios entre diversos setores. Atualmente está sendo utilizado pela Secretaria Municipal de Desenvolvimento Social de Canaã Dos Carajás-PA.</dd>
                         </div>
-
-                        <div class="md:w-full 2xl:w-[1000px] bg-gray-800 overflow-hidden rounded-xl items-center justify-center reveal">
-                            <img src="./assets/oficiofacil.png" alt="project1" class="h-full w-full object-cover"> 
+                        <div class="relative pl-9">
+                        <dt class="inline font-semibold text-white">
+                            <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-indigo-400">
+                            <path d="M10 1a4.5 4.5 0 0 0-4.5 4.5V9H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-.5V5.5A4.5 4.5 0 0 0 10 1Zm3 8V5.5a3 3 0 1 0-6 0V9h6Z" clip-rule="evenodd" fill-rule="evenodd" />
+                            </svg>
+                            SSL certificates.
+                        </dt>
+                        <dd class="inline">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</dd>
                         </div>
-
+                        <div class="relative pl-9">
+                        <dt class="inline font-semibold text-white">
+                            <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-indigo-400">
+                            <path d="M4.632 3.533A2 2 0 0 1 6.577 2h6.846a2 2 0 0 1 1.945 1.533l1.976 8.234A3.489 3.489 0 0 0 16 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234Z" />
+                            <path d="M4 13a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4Zm11.24 2a.75.75 0 0 1 .75-.75H16a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75h-.01a.75.75 0 0 1-.75-.75V15Zm-2.25-.75a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75h-.01Z" clip-rule="evenodd" fill-rule="evenodd" />
+                            </svg>
+                            Database backups.
+                        </dt>
+                        <dd class="inline">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</dd>
+                        </div>
+                    </dl>
                     </div>
                 </div>
-                
+                    <img width="1000" src="./assets/oficiofacil.png" alt="oficiofacil" class="flex md:hidden w-3xl max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-228 -ml-[700px] md:-ml-[300px] 2xl:-ml-[80px]" />
+                </div>
             </div>
         </div>
     </section>
+    
 
     <!-- transition phrase -->
     <div class="bg-gradient-to-b from-black via-gray-800 to-gray-950 py-24 sm:py-[150px] 2xl:py-[250px] -mt-12">
@@ -215,7 +267,7 @@
     </div>
 
     <!-- people  -->
-    <section class="bg-gradient-to-b from-gray-900 via-gray-700 to-gray-900 relative z-10 -mt-[60px] mb-10 2xl:min-h-[calc(100vh-90px)] min-h-[100vh] w-full rounded-t-[60px]">
+    <section class="bg-gradient-to-b from-black via-gray-700 to-gray-900 relative z-10 -mt-[60px] mb-10 2xl:min-h-[calc(100vh-90px)] min-h-[100vh] w-full rounded-t-[60px]">
         <div class="container mx-auto px-6 sm:px-16 py-20">
             <div class="flex flex-col lg:flex-row justify-between items-start mb-12 lg:mb-24">
                 <div class="lg:w-2/3 mb-8 lg:mb-0">
@@ -345,7 +397,7 @@
     </section>
 
     <!-- transition phrase -->
-     <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+     <!-- <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
         <img src="./assets/cover.jpg" alt="" class="opacity-10 absolute inset-0 -z-10 size-full object-cover object-right md:object-center" />
         <div aria-hidden="true" class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl">
             <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="aspect-1097/845 w-274.25 bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-20"></div>
@@ -385,10 +437,10 @@
             </dl>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Seção de Experiências -->
-    <section class="bg-gray-950">
+    <!-- <section class="bg-gray-950">
         <div class="container mx-auto px-6 sm:px-12 py-12">
             <div class="flex flex-col lg:flex-row justify-between items-start mb-12 sm:mb-16">
                 <div class="lg:w-2/3 mb-8 lg:mb-0">
@@ -403,14 +455,12 @@
                 </div>
             </div>
 
-            <!-- Imagem grande -->
             <div class="w-full mt-6 sm:mt-8 reveal">
                 <div class="w-full h-48 sm:h-64 md:h-80 lg:h-96 xl:h-[500px] overflow-hidden rounded-2xl bg-gray-800 flex items-center justify-center">
                     <img src="./assets/pexels-goumbik-574070.jpg" alt="">
                 </div>
             </div>
 
-            <!-- Grid de 3 colunas -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-4 sm:mt-6">
                 <div class="w-full h-48 sm:h-64 md:h-80 lg:h-[500px] overflow-hidden rounded-2xl bg-gray-800 flex items-center justify-center reveal">
                      <img src="./assets/pexels-flodahm-699459.jpg" alt="">
@@ -423,10 +473,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- footer -->
-    <div class="bg-black py-24 sm:py-32">
+    <div class="bg-gradient-b from-gray-900 to-black py-24 sm:py-32">
         <div class="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
             <div class="max-w-xl">
             <h2 class="text-3xl font-semibold tracking-tight text-pretty text-white sm:text-4xl reveal">Gostou do que viu?</h2>
