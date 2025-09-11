@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         words[currentIndex].classList.add('hidden');
         currentIndex = (currentIndex + 1) % words.length;
         words[currentIndex].classList.remove('hidden');
-    }, 3000); // 3000ms = 3 segundos
+    }, 3000);
 });
 
 setInterval(function() {
