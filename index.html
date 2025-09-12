@@ -18,6 +18,10 @@
             src: url('./fonts/AVGARDN_2.TTF') format('truetype');
             font-weight: 400;
         }
+
+        html {
+            scroll-behavior: smooth;
+        }
         
         /* Estilos para a animação de reveal */
         .reveal {
@@ -42,7 +46,7 @@
         }
     </style>
 </head>
-<body class="font-['Avgardo'] font-normal bg-gray-900 text-white">
+<body class="font-['Avgardo'] font-normal bg-gray-900 text-white scroll-smooth">
     <!-- home -->
     <div class="flex flex-col">
         <header class="bg-black p-1 text-sm text-white flex justify-center gap-2">Faz parte da equipe? Acesse a <span class="underline cursor-pointer font-semibold">Área Admin</span></header>
@@ -59,31 +63,55 @@
             </div>
         
             <!-- Header -->
-            <header class="relative z-10 container mx-auto px-6 sm:px-12 py-6">
+            <header class="relative z-10 container mx-auto md:px-12 md:py-6">
                 <div class="flex justify-between items-center">
-                    <div class="flex items-center">
+                    <div class="flex items-center hidden md:flex">
                         <div class="mr-4 w-12 h-12 sm:w-16 sm:h-16">
                             <img src="./assets/cerberus.png" alt="Cerberus Logo" class="w-full h-full object-contain">
                         </div>
                         <div class="text-xl sm:text-2xl font-normal text-white font-['Xirod']">Cerberus</div>
                     </div>
-                    <nav class="hidden md:flex items-center space-x-4 lg:space-x-8">
-                        <a href="#" class="text-white hover:text-gray-200 text-lg lg:text-xl">Início</a>
-                        <a href="#" class="text-white hover:text-gray-200 text-lg lg:text-xl">Sobre</a>
-                        <a href="#" class="text-white hover:text-gray-200 text-lg lg:text-xl">Projetos</a>
-                        <a href="#" class="text-white hover:text-gray-200 text-lg lg:text-xl">Integrantes</a>
-                        <a href="#" class="px-4 py-1 lg:px-6 lg:py-2 bg-white text-gray-900 text-lg lg:text-xl font-semibold rounded-full hover:bg-gray-100 transition duration-300">Contato</a>
+                    <nav id="desktop-nav" class="hidden md:flex items-center space-x-4 lg:space-x-8">
+                        <a href="#about" class="transition-all duration-300 text-white hover:text-gray-300 hover:underline underline-offset-8 text-2xl">Sobre</a>
+                        <a href="#projects" class="transition-all duration-300 hover:underline underline-offset-8 text-white hover:text-gray-200 text-2xl hover:text-gray-300">Projetos</a>
+                        <a href="#people" class="transition-all duration-300 hover:underline underline-offset-8 text-white hover:text-gray-200 text-2xl hover:text-gray-300">Equipe</a>
+                        <a href="#gallery" class="transition-all duration-300 hover:underline underline-offset-8 text-white hover:text-gray-200 text-2xl hover:text-gray-300">Galeria</a>
+                        <a href="#contact" class="transition-all duration-300 md:px-5 md:py-2 bg-white text-gray-900 rounded-full hover:bg-black hover:text-white font-semibold text-xl">Contato</a>
                     </nav>
-                    <button class="md:hidden text-white">
+
+                    <!-- mobile menu -->
+                    <div class="flex flex-col w-full md:hidden">
+  
+                        <div class="flex w-full items-top justify-between">
+                            <img src="./assets/cerberus.png" alt="Cerberus Logo" class="md:hidden size-[100px] object-contain pl-3">
+                            <div onclick="toggleMenu()" class="p-5 pt-7 h-[100px] flex flex-col gap-3 items-end justify-left">
+                                <div class="bg-white w-[30px] h-[2px]"></div>
+                                <div class="bg-white w-[45px] h-[2px]"></div>
+                                <div class="bg-white w-full h-[2px]"></div>
+                            </div>
+                        </div>
+
+                        <div id="mobile-menu" class="hidden absolute mt-12 -mr-12 flex flex-col p-12 w-full">
+                            <div class="z-99 rounded-md bg-black p-5 flex flex-col gap-5 text-xl font-semibold justify-center text-center transition-all duration-300">
+                                <div class="border-b border-gray-500 pb-2"><a href="#about" onclick="toggleMenu()">Sobre</a></div>
+                                <div class="border-b border-gray-500 pb-2 "><a href="#projects" onclick="toggleMenu()">Projetos</a></div>
+                                <div class="border-b border-gray-500 pb-2"><a href="#people" onclick="toggleMenu()">Equipe</a></div>
+                                <div class="border-b border-gray-500 pb-2"><a href="#gallery" onclick="toggleMenu()">Galeria</a></div>
+                                <div class="pb-2"><a href="#contact" onclick="toggleMenu()">Contato</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <button class="md:hidden text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                         </svg>
-                    </button>
+                    </button> -->
                 </div>
             </header>
         
             <!-- Conteúdo Hero -->
-            <div class="relative z-10 container mx-auto px-6 sm:px-12 flex flex-col justify-center -mt-8 mb-10 2xl:min-h-[calc(100vh-90px)] min-h-[100vh]">
+            <div class="z-2 relative container mx-auto px-6 sm:px-12 flex flex-col justify-center -mt-8 mb-10 2xl:min-h-[calc(100vh-90px)] min-h-[100vh]">
                 <div class="max-w-4xl">
                     <h1 class="[text-shadow:_2px_2px_4px_rgb(0_0_0_/_50%)] text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light mb-8 md:mb-8 2xl:mb-20 leading-tight">
                         Transformamos ideias em
@@ -96,7 +124,7 @@
                         Soluções inovadoras <br>para impulsionar <br>negócios no mundo digital.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 sm:gap-4 reveal">
-                        <button class="px-6 py-3 sm:px-8 sm:py-2 bg-white text-black text-lg sm:text-xl font-semibold rounded-full hover:bg-gray-100 transition duration-300">
+                        <button class="px-6 py-3 sm:px-8 sm:py-2 bg-white text-black text-lg sm:text-xl font-semibold rounded-full hover:bg-black hover:text-white transition-all duration-300">
                             Contato
                         </button>
                         <button class="px-6 py-3 sm:px-8 sm:py-2 border-2 border-white text-white text-lg sm:text-xl font-semibold rounded-full hover:bg-white hover:text-black transition duration-300">
@@ -109,7 +137,7 @@
     </div>
     
     <!-- about -->
-    <section class="bg-gradient-to-b from-gray-950 to-gray-900 rounded-t-3xl sm:rounded-t-[60px] relative z-10 -mt-20 sm:-mt-40 pt-16 sm:pt-24">
+    <section id="about" class="bg-gradient-to-b from-gray-950 to-gray-900 rounded-t-3xl sm:rounded-t-[60px] relative z-10 -mt-20 sm:-mt-40 pt-16 sm:pt-24">
         
         <div class="container mx-auto px-6 sm:px-12 pb-0 py-20 pt-0">
             <div class="flex flex-col lg:flex-row justify-between items-start mb-12 lg:mb-24">
@@ -125,28 +153,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mb-4 sm:mb-6 leading-tight hover:text-orange-500 transition-all duration-300 cursor-default reveal">
-            Nossos projetos transformam ideias em negócios reais
-        </h2>
-        <p class="text-xl sm:text-2xl md:text-3xl lg:text-4xl opacity-60 font-extralight mb-8 sm:mb-16 reveal">
-            somos uma equipe de desenvolvedores e gestores que se uniram com objetivo de usar a tecnologia para facilitar processos e criar soluções
-        </p> -->
-        
-        <!-- Container das 3 imagens (larga-fina-larga) -->
-        <!-- <div class="grid grid-cols-1 md:grid-cols-7 gap-4 mt-8 sm:mt-12 mb-12 sm:mb-16">
-            
-            <div class="md:col-span-5 h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-xl overflow-hidden reveal">
-                <div class="w-full h-full bg-gray-800 flex items-center justify-center">
-                    <img src="./assets/grupo8.jpeg" alt="">
-                </div>
-            </div>
-            <div class="md:col-span-2 h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-xl overflow-hidden reveal">
-                <div class="w-full h-full bg-gray-700 flex items-center justify-center">
-                    <img src="./assets/grupo3.jpg" alt="" class="object-cover w-full h-full">
-                </div>
-            </div>
-        </div> -->
 
         <!-- teste -->
         <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl">
@@ -298,7 +304,7 @@
     </div>
 
     <!-- projects -->
-    <section class="bg-black relative z-10 -mt-[60px] mb-10 2xl:min-h-[calc(100vh-90px)] min-h-[100vh] w-full rounded-t-[60px]">
+    <section id="projects" class="bg-black relative z-10 -mt-[60px] mb-10 2xl:min-h-[calc(100vh-90px)] min-h-[100vh] w-full rounded-t-[60px]">
         <div class="container mx-auto px-6 sm:px-12 pb-0 py-20">
             <div class="flex flex-col lg:flex-row justify-between items-start mb-12 lg:mb-24">
                 <div class="lg:w-2/3 mb-8 lg:mb-0">
@@ -420,7 +426,7 @@
     </div>
 
     <!-- people  -->
-    <section class="bg-gradient-to-b from-black via-gray-700 to-gray-900 relative z-10 -mt-[60px] mb-10 2xl:min-h-[calc(100vh-90px)] min-h-[100vh] w-full rounded-t-[60px]">
+    <section id="people" class="bg-gradient-to-b from-black via-gray-800 to-black relative z-10 -mt-[60px] mb-10 2xl:min-h-[calc(100vh-90px)] min-h-[100vh] w-full rounded-t-[60px]">
         <div class="container mx-auto px-6 sm:px-16 py-20">
             <div class="flex flex-col lg:flex-row justify-between items-start mb-12 lg:mb-24">
                 <div class="lg:w-2/3 mb-8 lg:mb-0">
@@ -437,7 +443,7 @@
 
             <div class="flex flex-col gap-8 md:gap-0">
                 <!-- people 1 -->
-                <div class="flex flex-col md:flex-row gap-7 items-center p-5 md:py-12 border-b border-gray-500 reveal">
+                <div class="flex flex-col md:flex-row gap-7 items-center p-5 md:py-12 border-b border-gray-500 reveal md:pr-0">
                     <div class="flex flex-col">
                         <h3 class="text-3xl sm:text-4xl md:text-5xl 2xl:text-7xl font-semibold mb-4 sm:mb-6 leading-tight uppercase">Victor Lara</h3>
                         <p class="text-xl max-w-[1300px] sm:text-2xl md:text-3xl lg:text-3xl opacity-60 font-extralight mb-8 sm:mb-16">
@@ -457,14 +463,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="overflow-hidden rounded-md reveal">
+                    <div class="overflow-hidden rounded-md reveal md:w-[1500px] md:h-full">
                         <img src="./assets/victor.jpg" alt="victor" class="w-full h-full object-cover">
                     </div> 
                 </div>
 
                 <!-- people 2 -->
-                <div class="flex flex-col md:flex-row gap-7 items-center p-5 md:py-12 border-b border-gray-500 reveal">
-                    <div class="hidden md:flex overflow-hidden rounded-md reveal">
+                <div class="flex flex-col md:flex-row gap-7 items-center p-5 md:py-12 border-b border-gray-500 reveal md:pl-0">
+                    <div class="md:w-[1500px] md:h-full hidden md:flex overflow-hidden rounded-md reveal">
                         <img src="./assets/lucas.jpg" alt="victor" class="w-full h-full object-cover">
                     </div> 
                     <div class="flex flex-col">
@@ -491,7 +497,7 @@
                     </div> 
                 </div>
                 <!-- people 3 -->
-                <div class="flex flex-col md:flex-row gap-7 items-center p-5 md:py-12 border-b border-gray-500 reveal">
+                <div class="flex flex-col md:flex-row gap-7 items-center p-5 md:py-12 md:pr-0 border-b border-gray-500 reveal">
                     <div class="flex flex-col">
                         <h3 class="text-3xl sm:text-4xl md:text-5xl 2xl:text-7xl font-semibold mb-4 sm:mb-6 leading-tight uppercase">Tiago Silva</h3>
                         <p class="text-xl max-w-[1300px] sm:text-2xl md:text-3xl lg:text-3xl opacity-60 font-extralight mb-8 sm:mb-16">
@@ -511,14 +517,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="overflow-hidden rounded-md reveal">
-                        <img src="./assets/tiago.enc" alt="victor" class="w-full h-full object-cover">
+                    <div class="overflow-hidden rounded-md reveal md:w-[1500px] md:h-full max-h-[220px] md:max-h-[320px]">
+                        <img src="./assets/tiago.enc" alt="victor" class="w-full h-full object-cover object-top">
                     </div> 
                 </div>
 
                 <!-- people 4 -->
-                <div class="flex flex-col md:flex-row gap-7 items-center p-5 md:py-12 border-b border-gray-500 reveal">
-                    <div class="hidden md:flex overflow-hidden rounded-md reveal">
+                <div class="flex flex-col md:flex-row gap-7 items-center p-5 md:py-12 border-b border-gray-500 reveal md:pl-0">
+                    <div class="md:w-[1500px] md:h-full hidden md:flex overflow-hidden rounded-md reveal">
                         <img src="./assets/gabriel3.jpg" alt="gabriel" class="w-full h-full object-cover">
                     </div> 
                     <div class="flex flex-col">
@@ -592,8 +598,8 @@
         </div>
     </div> -->
 
-    <!-- Seção de Experiências -->
-    <!-- <section class="bg-gray-950">
+    <!-- gallery -->
+    <section id="gallery" class="bg-gradient-to-b from-black via-bg-gray-900 to-black -mt-12">
         <div class="container mx-auto px-6 sm:px-12 py-12">
             <div class="flex flex-col lg:flex-row justify-between items-start mb-12 sm:mb-16">
                 <div class="lg:w-2/3 mb-8 lg:mb-0">
@@ -610,26 +616,46 @@
 
             <div class="w-full mt-6 sm:mt-8 reveal">
                 <div class="w-full h-48 sm:h-64 md:h-80 lg:h-96 xl:h-[500px] overflow-hidden rounded-2xl flex items-center justify-center">
-                    <img src="./assets/pexels-goumbik-574070.jpg" alt="">
+                    <img src="./assets/first.jpeg" alt="" class="h-full w-full object-cover object-[center_30%]">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 md:via-transparent to-black/80 md:to-black/80"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8 text-white z-20">
+                        <h2 class="text-xl sm:text-2xl md:text-6xl font-bold mb-2">1° Lugar Start no Futuro</h2>
+                        <p class="text-sm sm:text-base md:text-xl opacity-90">Subtítulo ou descrição complementar que ficará visível sobre o gradiente</p>
+                    </div>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-4 sm:mt-6">
                 <div class="w-full h-48 sm:h-64 md:h-80 lg:h-[500px] overflow-hidden rounded-2xl bg-gray-800 flex items-center justify-center reveal">
-                     <img src="./assets/pexels-flodahm-699459.jpg" alt="">
+                     <img src="./assets/grupo3.jpg" alt="" class="h-full w-full object-cover object-[center_30%]">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 md:via-transparent to-black/80 md:to-black/80"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8 text-white z-20">
+                        <h2 class="text-xl sm:text-2xl md:text-4xl font-bold mb-2">3° Lugar Hackathon no Futuro</h2>
+                        <p class="text-sm sm:text-base md:text-xl opacity-90">Subtítulo ou descrição complementar que ficará visível sobre o gradiente</p>
+                    </div>
                 </div>
                 <div class="w-full h-48 sm:h-64 md:h-80 lg:h-[500px] overflow-hidden rounded-2xl bg-gray-800 flex items-center justify-center reveal">
-                     <img src="./assets/pexels-flodahm-699459.jpg" alt="">
+                     <img src="./assets/summit.jpeg" alt="" class="h-full w-full object-cover object-bottom">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 md:via-transparent to-black/80 md:to-black/80"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8 text-white z-20">
+                        <h2 class="text-xl sm:text-2xl md:text-4xl font-bold mb-2">Carajás Summit</h2>
+                        <p class="text-sm sm:text-base md:text-xl opacity-90">Subtítulo ou descrição complementar que ficará visível sobre o gradiente</p>
+                    </div>
                 </div>
                 <div class="w-full h-48 sm:h-64 md:h-80 lg:h-[500px] overflow-hidden rounded-2xl bg-gray-800 flex items-center justify-center reveal">
-                    <img src="./assets/pexels-flodahm-699459.jpg" alt="">
+                    <img src="./assets/first.jpeg" alt="" class="h-full w-full object-cover object-[center_30%]">
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 md:via-transparent to-black/80 md:to-black/80"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8 text-white z-20">
+                        <h2 class="text-xl sm:text-2xl md:text-4xl font-bold mb-2">1° Lugar Start no Futuro</h2>
+                        <p class="text-sm sm:text-base md:text-xl opacity-90">Subtítulo ou descrição complementar que ficará visível sobre o gradiente</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- footer -->
-    <div class="bg-gradient-b from-gray-900 to-black py-24 sm:py-32">
+    <div id="contact" class="bg-black py-24 sm:py-32 -mt-12">
         <div class="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
             <div class="max-w-xl">
             <h2 class="text-3xl font-semibold tracking-tight text-pretty text-white sm:text-4xl reveal">Gostou do que viu?</h2>

@@ -23,3 +23,12 @@ setInterval(function() {
         nextWord.style.opacity = '1';
     }, 500); 
 }, 2000);
+
+function toggleMenu() {
+
+    if (document.getElementById("mobile-menu").classList.contains("hidden")) {
+        document.getElementById("mobile-menu").classList.replace("hidden", "teste");
+    } else {
+        document.getElementById("mobile-menu").classList.replace("teste", "hidden");
+    } ;
+}
