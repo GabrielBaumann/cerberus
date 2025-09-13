@@ -47,21 +47,20 @@
     </style>
 </head>
 <body class="font-['Avgardo'] font-normal bg-gray-900 text-white scroll-smooth">
+
     <!-- home -->
     <div class="flex flex-col">
-        <header class="bg-black p-1 text-sm text-white flex justify-center gap-2">Faz parte da equipe? Acesse a <span class="underline cursor-pointer font-semibold">Área Admin</span></header>
+        <header class="bg-gray-950 p-1 text-sm text-white flex justify-center gap-2">Faz parte da equipe? Acesse a <span class="underline cursor-pointer font-semibold">Área Admin</span></header>
+
         <!-- Seção Hero -->
         <section class="relative min-h-screen overflow-hidden">
-            <!-- Vídeo de fundo -->
+            
+            <!-- Imagem de fundo -->
             <div class="absolute inset-0 z-0">
-                <!-- <video autoplay muted loop class="w-full h-full object-cover">
-                    <source src="./assets/video.mp4" type="video/mp4">
-                    Seu navegador não suporta vídeos HTML5.
-                </video> -->
                 <img src="./assets/cover.jpg" alt="cover" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-black bg-opacity-45"></div>
+                <div class="absolute inset-0 bg-black/50"></div>
             </div>
-        
+
             <!-- Header -->
             <header class="relative z-10 container mx-auto md:px-12 md:py-6">
                 <div class="flex justify-between items-center">
@@ -78,10 +77,9 @@
                         <a href="#gallery" class="transition-all duration-300 hover:underline underline-offset-8 text-white hover:text-gray-200 text-2xl hover:text-gray-300">Galeria</a>
                         <a href="#contact" class="transition-all duration-300 md:px-5 md:py-2 bg-white text-gray-900 rounded-full hover:bg-black hover:text-white font-semibold text-xl">Contato</a>
                     </nav>
-
+                    
                     <!-- mobile menu -->
                     <div class="flex flex-col w-full md:hidden">
-  
                         <div class="flex w-full items-top justify-between">
                             <img src="./assets/cerberus.png" alt="Cerberus Logo" class="md:hidden size-[100px] object-contain pl-3">
                             <button onclick="toggleMenu()" class="p-5 pt-7 h-[100px] flex flex-col gap-3 items-end justify-left">
@@ -90,7 +88,6 @@
                                 <div class="bg-white w-full h-[2px]"></div>
                             </button>
                         </div>
-
                         <div id="mobile-menu" class="hidden absolute mt-12 -mr-12 flex flex-col p-12 w-full">
                             <div class="z-99 rounded-md bg-black p-5 flex flex-col gap-5 text-xl font-semibold justify-center text-center transition-all duration-300">
                                 <div class="border-b border-gray-500 pb-2"><a href="#about" onclick="toggleMenu()">Sobre</a></div>
@@ -101,12 +98,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- <button class="md:hidden text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                        </svg>
-                    </button> -->
                 </div>
             </header>
         
@@ -115,10 +106,10 @@
                 <div class="max-w-4xl">
                     <h1 class="[text-shadow:_2px_2px_4px_rgb(0_0_0_/_50%)] text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light mb-8 md:mb-8 2xl:mb-20 leading-tight">
                         Transformamos ideias em
-                        <span id="negocio" class="word ml-2 md:ml-5"> negócios</span>
-                        <span id="projetos" class="word ml-2 md:ml-5"> projetos</span>
-                        <span id="futuro" class="word ml-2 md:ml-5"> futuro</span>
-                        <span id="realidade" class="word ml-2 md:ml-5"> realidade</span>
+                        <span id="futuro" class="word ml-2 md:ml-5">futuro</span>
+                        <span id="projetos" class="word ml-2 md:ml-5">projetos</span>
+                        <span id="negocio" class="word ml-2 md:ml-5">negócios</span>
+                        <span id="realidade" class="word ml-2 md:ml-5">realidade</span>
                     </h1>
                     <p class="text-xl sm:text-2xl opacity-90 mb-6 md:mb-4 2xl:mb-8 font-extralight reveal">
                         Soluções inovadoras <br>para impulsionar <br>negócios no mundo digital.
@@ -137,9 +128,9 @@
     </div>
     
     <!-- about -->
-    <section id="about" class="bg-gradient-to-b from-gray-950 to-gray-900 rounded-t-3xl sm:rounded-t-[60px] relative z-10 -mt-20 sm:-mt-40 pt-16 sm:pt-24">
+    <section id="about" class="bg-gray-950 rounded-t-3xl sm:rounded-t-[60px] relative z-10 -mt-20 sm:-mt-40 pt-16 sm:pt-24">
 
-        <div class="container mx-auto px-6 sm:px-12 pb-0 py-20 pt-0">
+        <div class="container mx-auto px-4 sm:px-12 pb-0 py-20 pt-0">
             <div class="flex flex-col lg:flex-row justify-between items-start mb-12 lg:mb-24">
                 <div class="lg:w-2/3 mb-8 lg:mb-0">
                     <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mb-4 sm:mb-6 leading-tight reveal">
@@ -155,17 +146,17 @@
         </div>
 
         <!-- teste -->
-        <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl">
-            <div class=" grid gap-8 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
+        <div class="mx-auto max-w-2xl lg:max-w-7xl px-4 md:px-0">
+            <div class="grid gap-12 lg:grid-cols-3">
 
             <!-- left -->
             <div class="relative lg:row-span-2">
                 <div class="relative flex h-full flex-col overflow-hidden">
-                <div class="sm:px-10 reveal">
-                    <p class="mt-2 text-xl md:text-2xl font-semibold text-white tracking-tight text-white uppercase">o que fazemos</p>
-                    <p class="mt-2 text-xl text-gray-300 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <div class=" reveal">
+                    <p class="text-xl md:text-2xl font-semibold text-white tracking-tight text-white uppercase mb-4">o que fazemos</p>
+                    <p class="text-xl text-gray-300 ">Desenvolvemos projetos web em PHP e soluções locais para otimizar processos. Criamos sistemas de gerenciamento, automações e plataformas interativas que facilitam serviços sociais, promovem transparência e impulsionam o desenvolvimento sustentável.</p>
                 </div>
-                <div class="md:px-8 pt-4 pb-12 reveal">
+                <div class="pt-4 reveal">
                     <div class="rounded-md overflow-hidden @container relative min-h-120 w-full grow max-lg:mx-auto max-lg:max-w-sm">
                         <img src="./assets/grupo7.jpg" class="w-full h-full object-cover"/>
                     </div>
@@ -178,10 +169,10 @@
                 <div class="absolute inset-px"></div>
                 <div class="relative flex h-full flex-col overflow-hidden">
                     <div class="flex flex-col justify-left text-left gap-3">
-                        <p class="mt-2 text-xl md:text-2xl font-semibold text-white uppercase">quem somos</p>
-                        <p class=" text-xl text-gray-300">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p class="text-xl md:text-2xl font-semibold text-white uppercase">quem somos</p>
+                        <p class="text-xl text-gray-300">Somos uma equipe de desenvolvedores e gestores da Secretaria Municipal de Desenvolvimento Social de Canaã dos Carajás. Unidos pela inovação, combinamos expertise técnica e visão estratégica para criar impactos positivos na comunidade através de projetos digitais.</p>
                         <div class="rounded-md overflow-hidden flex md:hidden flex-1 items-center justify-center md:px-8 max-lg:pb-12 sm:px-10 lg:pb-2">
-                            <img src="./assets/grupo2.jpg" class="h-full w-full object-cover rounded-md"/>
+                            <img src="./assets/grupo8.jpeg" class="h-full w-full object-cover rounded-md"/>
                         </div>
                     </div>
                     
@@ -189,26 +180,26 @@
             </div>
 
             <!-- mid bottom -->
-            <div class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2 reveal">
+            <div class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2 reveal mt-8 md:mt-0">
                 <div class="absolute inset-px rounded-lg"></div>
-                <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
+                <div class="relative flex h-full flex-col overflow-hidden ">
                 <div class="">
-                    <p class="mt-2 text-xl md:text-2xl font-semibold text-white tracking-tight uppercase ">por que fazemos</p>
-                    <p class="mt-2 text-xl text-gray-300 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p class="text-xl md:text-2xl font-semibold text-white tracking-tight uppercase mb-2 md:mb-4">por que fazemos</p>
+                    <p class="text-xl text-gray-300 ">Acreditamos que a tecnologia humaniza o serviço público, simplificando vidas e reduzindo desigualdades. Motivados pelos desafios da comunidade, criamos soluções inclusivas para inspirar e contribuir para um futuro melhor.</p>
                 </div>
-                <div class="@container flex flex-1 items-center max-lg:py-6 lg:pb-2">
-                    <img src="" />
+                <div class="md:hidden rounded-md overflow-hidden mt-4 md:mt-0">
+                    <img src="./assets/grupo4.jpg" class="h-full w-full object-cover object-center" />
                 </div>
                 </div>
             </div>
 
             <!-- right -->
             <div class="relative lg:row-span-2">
-                <div class="absolute inset-px rounded-lg max-lg:rounded-b-4xl lg:rounded-r-4xl"></div>
-                <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
-                <div class="md:px-10">
-                    <p class="mt-2 text-xl md:text-2xl font-semibold text-white tracking-tight  uppercase reveal">como fazemos</p>
-                    <p class="mt-2 text-xl text-gray-300 reveal">Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget sem sodales gravida.</p>
+                <div class="absolute inset-px"></div>
+                <div class="relative flex h-full flex-col overflow-hidden  ">
+                <div class="md:pl-10">
+                    <p class="text-xl md:text-2xl font-semibold text-white tracking-tight uppercase reveal mb-3">como fazemos</p>
+                    <p class="text-xl text-gray-300 reveal">Utilizamos o GitHub para o desenvolvimento em equipe, prototipamos, testamos e implantamos. Priorizamos usabilidade, segurança e escalabilidade, com feedback constante em equipe.</p>
                 </div>
                 <div class="relative min-h-120 w-full grow reveal">
                     <div class="absolute top-10 right-0 bottom-0 left-10 overflow-hidden rounded-tl-xl bg-gray-900/60 outline outline-white/10">
@@ -218,7 +209,7 @@
                         <div class="border-r border-gray-600/10 px-4 py-2">App.jsx</div>
                         </div>
                     </div>
-                    <div class="bg-gray-950 px-6 pt-6 pb-14">
+                    <div class="bg-gray-950 px-6 pt-6">
                         
                     <div class="max-w-4xl mx-auto">
                         <div class="overflow-hidden">
@@ -296,7 +287,7 @@
     </section>
 
     <!-- transition phrase -->
-    <div class="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 py-[150px] md:py-[300px]">
+    <div class="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 py-[150px] md:py-[300px]">
         <div class="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col gap-10">
             <h2 class="text-center text-xl md:text-8xl font-semibold text-white uppercase hover:text-green-400 transition-all duration-300 cursor-default reveal">"A melhor ideia do mundo é a melhor ideia para o Mundo."</h2>
             <h2 class="text-center text-xl md:text-5xl font-semibold text-white uppercase italic reveal">Platão</h2>
@@ -304,7 +295,7 @@
     </div>
 
     <!-- projects -->
-    <section id="projects" class="bg-black relative z-10 -mt-[60px] mb-10 2xl:min-h-[calc(100vh-90px)] min-h-[100vh] w-full rounded-t-[60px]">
+    <section id="projects" class="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950">
         <div class="container mx-auto px-6 sm:px-12 pb-0 py-20">
             <div class="flex flex-col lg:flex-row justify-between items-start mb-12 lg:mb-24">
                 <div class="lg:w-2/3 mb-8 lg:mb-0">
@@ -320,42 +311,42 @@
             </div>
         </div>
         <!-- SINE -->
-        <div class="bg-gradient-to-b from-black via-gray-900 to-black overflow-hidden py-24 sm:py-32 pt-0">
+        <div class="overflow-hidden py-24  md:pt-12">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-                <div class="lg:pt-4 lg:pr-8 reveal">
+                <div class="lg:pr-8 reveal">
                     <div class="lg:max-w-lg">
-                    <h2 class="text-base/7 font-semibold text-indigo-400">Deploy faster</h2>
+                    <h2 class="text-base/7 font-semibold text-blue-400">Sistema Web</h2>
                     <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">SINE 360</p>
                     <p class="mt-6 text-lg/8 text-gray-300">Solução web responsiva para mobile que monitora, gerencia e gera relatórios dos processos internos do SINE. Atualmente está em uso no SINE de Canaã Dos Carajás-PA. Com objetivo de expandi-lo para municípios vizinhos da região carajás.</p>
                     <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-400 lg:max-w-none">
                         <div class="relative pl-9">
                         <dt class="inline font-semibold text-white">
-                            <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-indigo-400">
+                            <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-blue-400">
                             <path d="M5.5 17a4.5 4.5 0 0 1-1.44-8.765 4.5 4.5 0 0 1 8.302-3.046 3.5 3.5 0 0 1 4.504 4.272A4 4 0 0 1 15 17H5.5Zm3.75-2.75a.75.75 0 0 0 1.5 0V9.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0l-3.25 3.5a.75.75 0 1 0 1.1 1.02l1.95-2.1v4.59Z" clip-rule="evenodd" fill-rule="evenodd" />
                             </svg>
-                            Push to deploy.
+                            Sistema integrado.
                         </dt>
-                        <dd class="inline">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+                        <dd class="inline">Implantado em três setores chave: recepção, atendimento e administrativo, permitindo uma gestão fluida e colaborativa entre equipes.</dd>
                         </div>
                         <div class="relative pl-9">
                         <dt class="inline font-semibold text-white">
-                            <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-indigo-400">
+                            <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-blue-400">
                             <path d="M10 1a4.5 4.5 0 0 0-4.5 4.5V9H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-.5V5.5A4.5 4.5 0 0 0 10 1Zm3 8V5.5a3 3 0 1 0-6 0V9h6Z" clip-rule="evenodd" fill-rule="evenodd" />
                             </svg>
-                            SSL certificates.
+                            Segurança robusta.
                         </dt>
-                        <dd class="inline">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</dd>
+                        <dd class="inline">Utiliza hash de senhas para proteger dados sensíveis, garantindo conformidade com padrões de privacidade e evitando acessos não autorizados.</dd>
                         </div>
                         <div class="relative pl-9">
                         <dt class="inline font-semibold text-white">
-                            <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-indigo-400">
+                            <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-blue-400">
                             <path d="M4.632 3.533A2 2 0 0 1 6.577 2h6.846a2 2 0 0 1 1.945 1.533l1.976 8.234A3.489 3.489 0 0 0 16 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234Z" />
                             <path d="M4 13a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4Zm11.24 2a.75.75 0 0 1 .75-.75H16a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75h-.01a.75.75 0 0 1-.75-.75V15Zm-2.25-.75a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75h-.01Z" clip-rule="evenodd" fill-rule="evenodd" />
                             </svg>
-                            Database backups.
+                            Tecnologias modernas.
                         </dt>
-                        <dd class="inline">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</dd>
+                        <dd class="inline">Desenvolvido com PHP no back-end para lógica de negócios eficiente, e HTML, JavaScript, Tailwind CSS e CSS no front-end para interfaces intuitivas e responsivas.</dd>
                         </div>
                     </dl>
                     </div>
@@ -366,55 +357,57 @@
         </div>
 
         <!-- OFICIO FACIL -->
-        <div class="bg-gradient-to-b from-black via-gray-900 to-black overflow-hidden py-24 sm:py-32">
+        <div class="overflow-hidden py-24 sm:py-32">
             <div class="px-6 lg:px-8">
                 <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-[200px] gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                     <img width="1000" src="./assets/oficiofacil.png" alt="oficiofacil" class="hidden md:flex w-3xl max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-228 -ml-[700px] md:-ml-[300px] 2xl:-ml-[80px] reveal" />
                 <div class="lg:pt-4 lg:pl-8 reveal">
                     <div class="lg:max-w-lg">
-                    <h2 class="text-base/7 font-semibold text-indigo-400">Deploy faster</h2>
+                    <h2 class="text-base/7 font-semibold text-blue-400">Sistema Web</h2>
                     <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">OFICIO FACIL</p>
                     <p class="mt-6 text-lg/8 text-gray-300">Um sistema web que controla intervalos numéricos de ofícios entre diversos setores. Atualmente está sendo utilizado pela Secretaria Municipal de Desenvolvimento Social de Canaã Dos Carajás-PA.</p>
                     <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-400 lg:max-w-none">
                         <div class="relative pl-9">
                         <dt class="inline font-semibold text-white">
-                            <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-indigo-400">
+                            <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-blue-400">
                             <path d="M5.5 17a4.5 4.5 0 0 1-1.44-8.765 4.5 4.5 0 0 1 8.302-3.046 3.5 3.5 0 0 1 4.504 4.272A4 4 0 0 1 15 17H5.5Zm3.75-2.75a.75.75 0 0 0 1.5 0V9.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0l-3.25 3.5a.75.75 0 1 0 1.1 1.02l1.95-2.1v4.59Z" clip-rule="evenodd" fill-rule="evenodd" />
                             </svg>
-                            Push to deploy.
+                            Controle eficiente.
                         </dt>
-                        <dd class="inline">Um sistema web que controla intervalos numéricos de ofícios entre diversos setores. Atualmente está sendo utilizado pela Secretaria Municipal de Desenvolvimento Social de Canaã Dos Carajás-PA.</dd>
+                        <dd class="inline">Gerencia intervalos numéricos para evitar duplicidades e otimizar a distribuição de ofícios, promovendo organização e agilidade nos processos administrativos.</dd>
                         </div>
                         <div class="relative pl-9">
                         <dt class="inline font-semibold text-white">
-                            <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-indigo-400">
+                            <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-blue-400">
                             <path d="M10 1a4.5 4.5 0 0 0-4.5 4.5V9H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-.5V5.5A4.5 4.5 0 0 0 10 1Zm3 8V5.5a3 3 0 1 0-6 0V9h6Z" clip-rule="evenodd" fill-rule="evenodd" />
                             </svg>
-                            SSL certificates.
+                            Ampla Validação.
                         </dt>
-                        <dd class="inline">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</dd>
+                        <dd class="inline">Atualmente já foi adotado em mais de 20 setores, facilitando a coordenação colaborativa e o fluxo de documentos em toda a secretaria.</dd>
                         </div>
                         <div class="relative pl-9">
                         <dt class="inline font-semibold text-white">
-                            <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-indigo-400">
+                            <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="absolute top-1 left-1 size-5 text-blue-400">
                             <path d="M4.632 3.533A2 2 0 0 1 6.577 2h6.846a2 2 0 0 1 1.945 1.533l1.976 8.234A3.489 3.489 0 0 0 16 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234Z" />
                             <path d="M4 13a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4Zm11.24 2a.75.75 0 0 1 .75-.75H16a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75h-.01a.75.75 0 0 1-.75-.75V15Zm-2.25-.75a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75h-.01Z" clip-rule="evenodd" fill-rule="evenodd" />
                             </svg>
-                            Database backups.
+                            Emissão de PDF's.
                         </dt>
-                        <dd class="inline">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</dd>
+                        <dd class="inline">A cada intervalo de números é gerado um documento PDF que pode ser impresso, facilitando o controle interno de cada setor no uso e acompanhamento de seus ofícios.</dd>
                         </div>
                     </dl>
                     </div>
                 </div>
-                    <img width="1000" src="./assets/oficiofacil.png" alt="oficiofacil" class="flex md:hidden w-3xl max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-228 -ml-[700px] md:-ml-[300px] 2xl:-ml-[80px]" />
+                    <div class="overflow-hidden -ml-[350px] rounded-xl">
+                        <img width="1000" src="./assets/oficiofacil.png" alt="oficiofacil" class="flex md:hidden w-3xl max-w-none rounded-xl   object-cover object-left" />
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     
     <!-- transition phrase -->
-    <div class="bg-gradient-to-b from-black via-gray-800 to-gray-950 py-24 py-[150px] 2xl:py-[200px] md:h-screen -mt-12">
+    <div class="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 py-24 py-[150px] 2xl:py-[200px] md:h-screen">
         <div class="flex flex-col gap-12 mx-auto max-w-7xl px-6 lg:px-8">
             <div class="flex justify-end text-right items-center">
                 <h1 class="text-white text-xl md:text-6xl font-semibold hover:text-yellow-500 transition-all duration-300 cursor-default reveal">"Não se gerencia o que não se mede,<br> não se mede o que não se define,<br> não se define o que não se entende<br> e não há sucesso no que não se gerencia"</h1>
@@ -426,7 +419,7 @@
     </div>
 
     <!-- people  -->
-    <section id="people" class="bg-gradient-to-b from-black via-gray-800 to-black relative z-10 -mt-[60px] mb-10 2xl:min-h-[calc(100vh-90px)] min-h-[100vh] w-full rounded-t-[60px]">
+    <section id="people" class="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950">
         <div class="container mx-auto px-6 sm:px-16 py-20">
             <div class="flex flex-col lg:flex-row justify-between items-start mb-12 lg:mb-24">
                 <div class="lg:w-2/3 mb-8 lg:mb-0">
@@ -441,18 +434,19 @@
                 </div>
             </div>
 
+
             <div class="flex flex-col gap-8 md:gap-0">
-                <!-- people 1 -->
+                <!-- Victor -->
                 <div class="flex flex-col md:flex-row gap-7 items-center py-5 md:py-12 border-b border-gray-500 md:border-none reveal md:pr-0">
-                    <div class="flex flex-col">
+                    <div class="flex flex-col md:w-7/12">
                         <h3 class="text-3xl sm:text-4xl md:text-5xl 2xl:text-7xl font-semibold mb-4 sm:mb-6 leading-tight uppercase">Victor Lara</h3>
-                        <div class="md:hidden overflow-hidden rounded-md reveal md:w-[1500px] md:h-full mb-4">
+                        <div class="md:hidden w-full h-64 overflow-hidden rounded-md reveal mb-4">
                             <img src="./assets/victor.jpg" alt="victor" class="w-full h-full object-cover">
                         </div> 
                         <p class="text-xl max-w-[1300px] sm:text-2xl md:text-3xl lg:text-3xl opacity-60 font-extralight mb-8 sm:mb-16">
-                        Gestor de operações, Analista de Dados e Líder Geral
+                        Gestor de operações, Analista de Dados e Líder Geral.
                         </p>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        <p>Formado em RH. Experiência em captação e análise de dados, liderança e gestão de equipes.</p>
                         <div class="flex gap-8 items-center">
                             <div class="flex items-center gap-4 mt-5">
                                 <a href="#" class="rounded-full cursor-pointer transition-all duration-300">
@@ -464,27 +458,32 @@
                                     <img src="./assets/gmail.png" alt="gmail" srcset="" class="size-10 text-white">
                                 </a>
                             </div>
+                            <div class="flex items-center gap-4 mt-5">
+                                <a href="#" class="rounded-full cursor-pointer transition-all duration-300">
+                                    <img src="./assets/github.png" alt="github" srcset="" class="size-10 text-white">
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="hidden md:flex overflow-hidden rounded-md reveal md:w-[1500px] md:h-full">
+                    <div class="hidden md:flex md:w-5/12 h-96 overflow-hidden rounded-md reveal">
                         <img src="./assets/victor.jpg" alt="victor" class="w-full h-full object-cover">
                     </div> 
                 </div>
 
-                <!-- people 2 -->
+                <!-- Lucas -->
                 <div class="flex flex-col md:flex-row gap-7 items-center py-5 md:py-12 border-b border-gray-500 md:border-none reveal md:pl-0">
-                    <div class="md:w-[1500px] md:h-full hidden md:flex overflow-hidden rounded-md reveal">
-                        <img src="./assets/lucas.jpg" alt="victor" class="w-full h-full object-cover">
+                    <div class="hidden md:flex md:w-5/12 h-96 overflow-hidden rounded-md reveal">
+                        <img src="./assets/lucas.jpg" alt="lucas" class="w-full h-full object-cover">
                     </div> 
-                    <div class="flex flex-col">
+                    <div class="flex flex-col md:w-7/12">
                         <h3 class="text-3xl sm:text-4xl md:text-5xl 2xl:text-7xl font-semibold mb-4 sm:mb-6 leading-tight uppercase">Lucas Silva</h3>
-                        <div class="flex md:hidden overflow-hidden rounded-md reveal mb-4">
-                            <img src="./assets/lucas.jpg" alt="victor" class="w-full h-full object-cover">
+                        <div class="md:hidden w-full h-64 overflow-hidden rounded-md reveal mb-4">
+                            <img src="./assets/lucas.jpg" alt="lucas" class="w-full h-full object-cover">
                         </div>
                         <p class="text-xl max-w-[1300px] sm:text-2xl md:text-3xl lg:text-3xl opacity-60 font-extralight mb-8 sm:mb-16">
-                        Gestor de operações, Analista de Dados e Líder Geral
+                        Desenvolvedor Back End e Líder de Desenvolvimento.
                         </p>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        <p>Cursando ADS. Experiência de mais de dois anos em desenvolvimento.</p>
                         <div class="flex gap-8 items-center">
                             <div class="flex items-center gap-4 mt-5">
                                 <a href="#" class="rounded-full cursor-pointer transition-all duration-300">
@@ -501,15 +500,15 @@
                 </div>
                 <!-- people 3 -->
                 <div class="flex flex-col md:flex-row gap-7 items-center py-5 md:py-12 md:pr-0 border-b border-gray-500 md:border-none reveal">
-                    <div class="flex flex-col">
+                    <div class="flex flex-col md:w-7/12">
                         <h3 class="text-3xl sm:text-4xl md:text-5xl 2xl:text-7xl font-semibold mb-4 sm:mb-6 leading-tight uppercase">Tiago Silva</h3>
                         <p class="text-xl max-w-[1300px] sm:text-2xl md:text-3xl lg:text-3xl opacity-60 font-extralight mb-8 sm:mb-16">
-                        Gestor de operações, Analista de Dados e Líder Geral
+                        Desenvolvedor Júnior e QA Tester.
                         </p>
-                        <div class="md:hidden overflow-hidden rounded-md reveal md:w-[1500px] md:h-full max-h-[220px] md:max-h-[320px] mb-4">
-                            <img src="./assets/tiago.enc" alt="victor" class="w-full h-full object-cover object-top">
+                        <div class="md:hidden w-full h-64 overflow-hidden rounded-md reveal mb-4">
+                            <img src="./assets/tiago.enc" alt="tiago" class="w-full h-full object-cover object-top">
                         </div> 
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        <p>Experiência de mais de três anos em desenvolvimento.</p>
                         <div class="flex gap-8 items-center">
                             <div class="flex items-center gap-4 mt-5">
                                 <a href="#" class="rounded-full cursor-pointer transition-all duration-300">
@@ -523,25 +522,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hidden md:flex overflow-hidden rounded-md reveal md:w-[1500px] md:h-full max-h-[220px] md:max-h-[320px]">
-                        <img src="./assets/tiago.enc" alt="victor" class="w-full h-full object-cover object-top">
+                    <div class="hidden md:flex md:w-5/12 h-96 overflow-hidden rounded-md reveal">
+                        <img src="./assets/tiago.enc" alt="tiago" class="w-full h-full object-cover object-top">
                     </div> 
                 </div>
 
                 <!-- people 4 -->
                 <div class="flex flex-col md:flex-row gap-7 items-center py-5 md:py-12 border-b border-gray-500 md:border-none reveal md:pl-0">
-                    <div class="hidden md:w-[1500px] md:h-full hidden md:flex overflow-hidden rounded-md reveal">
+                    <div class="hidden md:flex md:w-5/12 h-96 overflow-hidden rounded-md reveal">
                         <img src="./assets/gabriel3.jpg" alt="gabriel" class="w-full h-full object-cover">
                     </div> 
-                    <div class="flex flex-col">
+                    <div class="flex flex-col md:w-7/12">
                         <h3 class="text-3xl sm:text-4xl md:text-5xl 2xl:text-7xl font-semibold mb-4 sm:mb-6 leading-tight uppercase">Gabriel Baumann</h3>
-                        <div class="md:hidden overflow-hidden rounded-md reveal mb-4">
+                        <div class="md:hidden w-full h-64 overflow-hidden rounded-md reveal mb-4">
                             <img src="./assets/gabriel3.jpg" alt="gabriel" class="w-full h-full object-cover">
                         </div> 
                         <p class="text-xl max-w-[1300px] sm:text-2xl md:text-3xl lg:text-3xl opacity-60 font-extralight mb-8 sm:mb-16">
-                        Gestor de operações, Analista de Dados e Líder Geral
+                        Desenvolvedor Front End e UI/UX Designer
                         </p>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        <p>Cursando Sistemas de Informação pela UFRA. Possui experiência de um ano e meio em desenvolvimento.</p>
                         <div class="flex gap-8 items-center">
                             <div class="flex items-center gap-4 mt-5">
                                 <a href="#" class="rounded-full cursor-pointer transition-all duration-300">
@@ -556,8 +555,8 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+
         </div>
     </section>
 
@@ -605,9 +604,9 @@
     </div> -->
 
     <!-- gallery -->
-    <section id="gallery" class="bg-gradient-to-b from-black via-bg-gray-900 to-black -mt-12">
+    <section id="gallery" class="bg-gradient-to-b from-gray-950 via-gray-900 to-black">
         <div class="container mx-auto px-6 sm:px-12 py-12">
-            <div class="flex flex-col lg:flex-row justify-between items-start mb-12 sm:mb-16">
+            <div class="flex flex-col lg:flex-row justify-between items-start mb-12 sm:mb-16 md:mt-[150px]">
                 <div class="lg:w-2/3 mb-8 lg:mb-0">
                     <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mb-4 sm:mb-6 leading-tight reveal">
                         Criamos experiências <br>que inspiram ação
@@ -620,44 +619,106 @@
                 </div>
             </div>
 
-            <div class="w-full mt-6 sm:mt-8 reveal">
-                <div class="w-full h-48 sm:h-64 md:h-80 lg:h-96 xl:h-[500px] overflow-hidden rounded-2xl flex items-center justify-center">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- ITEM 1 -->
+                <div class="relative group overflow-hidden rounded-md h-[250px] md:h-[400px] reveal bg-red-500 md:col-span-2">
                     <img src="./assets/first.jpeg" alt="" class="h-full w-full object-cover object-[center_30%]">
-                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 md:via-transparent to-black/80 md:to-black/80"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8 text-white z-20">
-                        <h2 class="text-xl sm:text-2xl md:text-6xl font-bold mb-2">1° Lugar Start no Futuro</h2>
-                        <p class="text-sm sm:text-base md:text-xl opacity-90">Subtítulo ou descrição complementar que ficará visível sobre o gradiente</p>
+                    <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent 
+                                opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="p-4 text-white">
+                        <h3 class="text-2xl md:text-5xl font-bold">Título 1</h3>
+                        <p class="text-md md:text-2xl">Subtítulo aqui</p>
+                    </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-4 sm:mt-6">
-                <div class="w-full h-48 sm:h-64 md:h-80 lg:h-[500px] overflow-hidden rounded-2xl bg-gray-800 flex items-center justify-center reveal">
-                     <img src="./assets/grupo3.jpg" alt="" class="h-full w-full object-cover object-[center_30%]">
-                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 md:via-transparent to-black/80 md:to-black/80"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8 text-white z-20">
-                        <h2 class="text-xl sm:text-2xl md:text-4xl font-bold mb-2">3° Lugar Hackathon no Futuro</h2>
-                        <p class="text-sm sm:text-base md:text-xl opacity-90">Subtítulo ou descrição complementar que ficará visível sobre o gradiente</p>
+                <!-- ITEM 2 -->
+                <div class="relative group overflow-hidden rounded-md h-[250px] md:h-full reveal bg-blue-500 md:row-span-2">
+                    <img src="./assets/victor.jpg" alt="" class="h-full w-full object-cover object-[60%_center]">
+                    <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent 
+                                opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="p-4 text-white">
+                        <h3 class="text-2xl md:text-5xl font-bold">Título 2</h3>
+                        <p class="text-md md:text-2xl">Subtítulo aqui</p>
+                    </div>
                     </div>
                 </div>
-                <div class="w-full h-48 sm:h-64 md:h-80 lg:h-[500px] overflow-hidden rounded-2xl bg-gray-800 flex items-center justify-center reveal">
-                     <img src="./assets/summit.jpeg" alt="" class="h-full w-full object-cover object-bottom">
-                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 md:via-transparent to-black/80 md:to-black/80"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8 text-white z-20">
-                        <h2 class="text-xl sm:text-2xl md:text-4xl font-bold mb-2">Carajás Summit</h2>
-                        <p class="text-sm sm:text-base md:text-xl opacity-90">Subtítulo ou descrição complementar que ficará visível sobre o gradiente</p>
+
+                <!-- ITEM 3 -->
+                <div class="relative group overflow-hidden rounded-md h-[250px] md:h-[400px] reveal bg-green-500">
+                    <img src="./assets/lucas.jpg" alt="" class="h-full w-full object-cover object-center">
+                    <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent 
+                                opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="p-4 text-white">
+                        <h3 class="text-2xl md:text-5xl font-bold">Título 3</h3>
+                        <p class="text-md md:text-2xl">Subtítulo aqui</p>
+                    </div>
                     </div>
                 </div>
-                <div class="w-full h-48 sm:h-64 md:h-80 lg:h-[500px] overflow-hidden rounded-2xl bg-gray-800 flex items-center justify-center reveal">
-                    <img src="./assets/first.jpeg" alt="" class="h-full w-full object-cover object-[center_30%]">
-                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 md:via-transparent to-black/80 md:to-black/80"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8 text-white z-20">
-                        <h2 class="text-xl sm:text-2xl md:text-4xl font-bold mb-2">1° Lugar Start no Futuro</h2>
-                        <p class="text-sm sm:text-base md:text-xl opacity-90">Subtítulo ou descrição complementar que ficará visível sobre o gradiente</p>
+
+                <!-- ITEM 4 -->
+                <div class="relative group overflow-hidden rounded-md h-[250px] md:h-[400px] reveal bg-yellow-500">
+                    <img src="./assets/summit.jpeg" alt="" class="h-full w-full object-cover object-center">
+                    <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent 
+                                opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="p-4 text-white">
+                        <h3 class="text-2xl md:text-5xl font-bold">Título 4</h3>
+                        <p class="text-md md:text-2xl">Subtítulo aqui</p>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 5 -->
+                <div class="relative group overflow-hidden rounded-md h-[250px] md:h-full reveal bg-pink-300 md:col-span-2 md:row-span-2">
+                    <img src="./assets/gabriel3.jpg" alt="" class="h-full w-full object-cover object-[20%_center]">
+                    <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent 
+                                opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="p-4 text-white">
+                        <h3 class="text-2xl md:text-5xl font-bold">Título 5</h3>
+                        <p class="text-md md:text-2xl">Subtítulo aqui</p>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 6 -->
+                <div class="relative group overflow-hidden rounded-md h-[250px] md:h-[400px] reveal bg-yellow-500">
+                    <img src="./assets/win.jpeg" alt="" class="h-full w-full object-cover object-center">
+                    <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent 
+                                opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="p-4 text-white">
+                        <h3 class="text-2xl md:text-5xl font-bold">Título 6</h3>
+                        <p class="text-md md:text-2xl">Subtítulo aqui</p>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 7 -->
+                <div class="relative group overflow-hidden rounded-md h-[250px] md:h-[400px] reveal bg-yellow-500">
+                    <img src="./assets/call.jpeg" alt="" class="h-full w-full object-cover object-center">
+                    <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent 
+                                opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="p-4 text-white">
+                        <h3 class="text-2xl md:text-5xl font-bold">Título 7</h3>
+                        <p class="text-md md:text-2xl">Subtítulo aqui</p>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 8 -->
+                <div class="relative group overflow-hidden rounded-md h-[250px] md:h-[400px] reveal bg-purple-500 md:col-span-3">
+                    <img src="./assets/grupo3.jpg" alt="" class="h-full w-full object-cover object-center">
+                    <div class="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 to-transparent 
+                                opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="p-4 text-white">
+                        <h3 class="text-2xl md:text-5xl font-bold">Título 8</h3>
+                        <p class="text-md md:text-2xl">Subtítulo aqui</p>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
     </section>
 
     <!-- footer -->
