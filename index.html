@@ -420,8 +420,8 @@
 
     <!-- people  -->
     <section id="people" class="bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950">
-        <div class="container mx-auto px-6 sm:px-16 py-20">
-            <div class="flex flex-col lg:flex-row justify-between items-start mb-12 lg:mb-24">
+        <div class="flex flex-col w-full justify-center px-6 sm:px-0 py-20">
+            <div class="flex flex-col lg:flex-row justify-between items-start mb-12 lg:mb-24 md:px-12 2xl:px-[150px]">
                 <div class="lg:w-2/3 mb-8 lg:mb-0">
                     <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mb-4 sm:mb-6 leading-tight reveal">
                         NOSSA EQUIPE
@@ -434,71 +434,289 @@
                 </div>
             </div>
 
-
             <div class="flex flex-col gap-8 md:gap-0">
-                
                 <!-- Victor -->
-                <div class="flex flex-col md:flex-row gap-7 items-center py-5 md:py-12 border-b border-gray-500 md:border-none reveal md:pr-0">
-                    <div class="flex flex-col md:w-7/12">
+                <div class="flex flex-col items-center md:flex-row md:h-[120vh] py-5 md:py-0 border-b border-gray-500 md:border-none reveal md:pr-0">
+                    <div class="flex flex-col md:w-7/12 md:px-12 2xl:px-[150px]">
                         <h3 class="text-3xl sm:text-4xl md:text-5xl 2xl:text-7xl font-semibold mb-4 sm:mb-6 leading-tight uppercase">Victor Lara</h3>
                         <div class="md:hidden w-full h-64 overflow-hidden rounded-md reveal mb-4">
                             <img src="./assets/victor.jpg" alt="victor" class="w-full h-full object-cover">
                         </div> 
-                        <p class="text-xl max-w-[1300px] sm:text-2xl md:text-3xl lg:text-3xl opacity-60 font-extralight mb-8 sm:mb-16">
+                        <p class="text-xl max-w-[1300px] sm:text-2xl md:text-3xl lg:text-3xl opacity-60 font-extralight mb-8 ">
                         Gestor de operações, Analista de Dados e Líder Geral.
                         </p>
-                        <p>Formado em RH. Experiência em captação e análise de dados, liderança e gestão de equipes.</p>
+                        
+                        <!-- Texto adicional sobre experiência -->
+                        <div class="space-y-6 mb-8">
+                            <div class="flex items-start gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                                <p class="text-md 2xl:text-xl">Profissional com sólida experiência em gestão de operações e análise de dados, especializado em otimizar processos e aumentar a eficiência operacional.</p>
+                            </div>
+                            
+                            <div class="flex items-start gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                                </svg>
+                                <p class="text-md 2xl:text-xl">Expertise em transformar dados complexos em insights acionáveis para tomada de decisões estratégicas.</p>
+                            </div>
+                            
+                            <div class="flex items-start gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                                <p class="text-md 2xl:text-xl">Liderança de equipes multifuncionais com foco no desenvolvimento de talentos e na criação de ambientes colaborativos.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Seção de Habilidades -->
+                        <div class="mb-10">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <!-- Hard Skills -->
+                                <div class="">
+                                    <h5 class="text-xl font-medium mb-4 flex items-center gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                                        </svg>
+                                        Hard Skills
+                                    </h5>
+                                    <ul class="space-y-2">
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Análise de Dados e Business Intelligence
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Gestão de Operações e Processos
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Ferramentas de Análise (SQL, Python, Power BI)
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Gestão de Projetos e Metodologias Ágeis
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <!-- Soft Skills -->
+                                <div class="">
+                                    <h5 class="text-xl font-medium mb-4 flex items-center gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                        </svg>
+                                        Soft Skills
+                                    </h5>
+                                    <ul class="space-y-2">
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Liderança e Gestão de Equipes
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Comunicação Eficaz
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Resolução de Problemas Complexos
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Pensamento Estratégico
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Adaptabilidade e Resiliência
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                         <div class="flex gap-8 items-center">
-                            <div class="flex items-center gap-4 mt-5">
-                                <a href="https://www.linkedin.com/in/victor-lara-76b797b7/" class="rounded-full cursor-pointer transition-all duration-300">
+                            <div class="flex items-center gap-4 md:mt-0">
+                                <a href="https://www.linkedin.com/in/victor-lara-76b797b7/" class="rounded-full cursor-pointer transition-all duration-300 hover:scale-110">
                                     <img src="./assets/linkedin.png" alt="linkedin" srcset="" class="size-10 text-white">
                                 </a>
                             </div>
-                            <div class="flex items-center gap-4 mt-5">
-                                <a href="mailto:victormkt.vdesign@gmail.com" class="rounded-full cursor-pointer transition-all duration-300">
+                            <div class="flex items-center gap-4 md:mt-0">
+                                <a href="mailto:victormkt.vdesign@gmail.com" class="rounded-full cursor-pointer transition-all duration-300 hover:scale-110">
                                     <img src="./assets/gmail.png" alt="gmail" srcset="" class="size-10 text-white">
                                 </a>
                             </div>
-                            <div class="flex items-center gap-4 mt-5">
-                                <a href="https://github.com/victorvdesign-dot" class="rounded-full cursor-pointer transition-all duration-300">
+                            <div class="flex items-center gap-4 md:mt-0">
+                                <a href="https://github.com/victorvdesign-dot" class="rounded-full cursor-pointer transition-all duration-300 hover:scale-110">
                                     <img src="./assets/github.png" alt="github" srcset="" class="size-10 text-white">
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="hidden md:flex md:w-5/12 h-96 overflow-hidden rounded-md reveal">
+
+                    <div class="hidden md:flex md:w-5/12 h-96 md:h-full overflow-hidden rounded-md reveal">
                         <img src="./assets/victor.jpg" alt="victor" class="w-full h-full object-cover">
                     </div> 
                 </div>
 
                 <!-- Lucas -->
-                <div class="flex flex-col md:flex-row gap-7 items-center py-5 md:py-12 border-b border-gray-500 md:border-none reveal md:pl-0">
-                    <div class="hidden md:flex md:w-5/12 h-96 overflow-hidden rounded-md reveal">
+                <div class="flex flex-col md:flex-row md:h-[120vh] gap-7 items-center py-5 md:py-12 border-b border-gray-500 md:border-none reveal md:pl-0">
+                    <div class="hidden md:flex md:w-5/12 h-96 md:h-full overflow-hidden rounded-md reveal">
                         <img src="./assets/lucas.jpg" alt="lucas" class="w-full h-full object-cover">
                     </div> 
-                    <div class="flex flex-col md:w-7/12">
+                    <div class="flex flex-col md:w-7/12 md:px-12 2xl:px-[150px]">
                         <h3 class="text-3xl sm:text-4xl md:text-5xl 2xl:text-7xl font-semibold mb-4 sm:mb-6 leading-tight uppercase">Lucas Silva</h3>
                         <div class="md:hidden w-full h-64 overflow-hidden rounded-md reveal mb-4">
                             <img src="./assets/lucas.jpg" alt="lucas" class="w-full h-full object-cover">
-                        </div>
-                        <p class="text-xl max-w-[1300px] sm:text-2xl md:text-3xl lg:text-3xl opacity-60 font-extralight mb-8 sm:mb-16">
-                        Desenvolvedor Back End e Líder de Desenvolvimento.
+                        </div> 
+                        <p class="text-xl max-w-[1300px] sm:text-2xl md:text-3xl lg:text-3xl opacity-60 font-extralight mb-8 ">
+                        Desenvolvedor Back-end E Líder de Desenvolvimento.
                         </p>
-                        <p>Cursando ADS. Experiência de mais de dois anos em desenvolvimento.</p>
+                        
+                        <!-- Texto adicional sobre experiência -->
+                        <div class="space-y-6 mb-8">
+                            <div class="flex items-start gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                                <p class="text-md 2xl:text-xl">Desenvolvedor com mais de 8 anos de experiência em programação, especializado em back-end e liderança técnica de equipes de desenvolvimento.</p>
+                            </div>
+                            
+                            <div class="flex items-start gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                                </svg>
+                                <p class="text-md 2xl:text-xl">Atualmente atuando com PHP e tecnologias web, com 1 ano e meio de experiência específica em desenvolvimento web.</p>
+                            </div>
+                            
+                            <div class="flex items-start gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                                <p class="text-md 2xl:text-xl">Formado em História e cursando Análise e Desenvolvimento de Sistemas, combinando habilidades analíticas com conhecimento técnico.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Seção de Habilidades -->
+                        <div class="mb-10">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <!-- Hard Skills -->
+                                <div class="">
+                                    <h5 class="text-xl font-medium mb-4 flex items-center gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                                        </svg>
+                                        Hard Skills
+                                    </h5>
+                                    <ul class="space-y-2">
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Desenvolvimento Back-end com PHP
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Bancos de Dados SQL e NoSQL
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            APIs RESTful e Web Services
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Versionamento com Git
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Frameworks PHP (Laravel, Symfony)
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <!-- Soft Skills -->
+                                <div class="">
+                                    <h5 class="text-xl font-medium mb-4 flex items-center gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                        </svg>
+                                        Soft Skills
+                                    </h5>
+                                    <ul class="space-y-2">
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Liderança de Equipes de Desenvolvimento
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Comunicação Clara e Eficaz
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Resolução de Problemas Complexos
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Capacidade Analítica
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Adaptabilidade e Aprendizado Contínuo
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <div class="flex gap-8 items-center">
-                            <!-- <div class="flex items-center gap-4 mt-5">
-                                <a href="#" class="rounded-full cursor-pointer transition-all duration-300">
-                                    <img src="./assets/linkedin.png" alt="linkedin" srcset="" class="size-10 text-white">
-                                </a>
-                            </div> -->
-                            <div class="flex items-center gap-4 mt-5">
-                                <a href="mailto:trabalhovba@gmail.com" class="rounded-full cursor-pointer transition-all duration-300">
-                                    <img src="./assets/gmail.png" alt="gmail" srcset="" class="size-10 text-white">
+                            <div class="flex items-center gap-4 md:mt-0">
+                                <a href="https://www.linkedin.com/in/lucas-silva" class="rounded-full cursor-pointer transition-all duration-300 hover:scale-110">
+                                    <img src="./assets/linkedin.png" alt="linkedin" class="size-10 text-white">
                                 </a>
                             </div>
-                            <div class="flex items-center gap-4 mt-5">
-                                <a href="https://github.com/NietzscheVBA" class="rounded-full cursor-pointer transition-all duration-300">
-                                    <img src="./assets/github.png" alt="github" srcset="" class="size-10 text-white">
+                            <div class="flex items-center gap-4 md:mt-0">
+                                <a href="mailto:lucas.silva@example.com" class="rounded-full cursor-pointer transition-all duration-300 hover:scale-110">
+                                    <img src="./assets/gmail.png" alt="gmail" class="size-10 text-white">
+                                </a>
+                            </div>
+                            <div class="flex items-center gap-4 md:mt-0">
+                                <a href="https://github.com/lucas-silva-dev" class="rounded-full cursor-pointer transition-all duration-300 hover:scale-110">
+                                    <img src="./assets/github.png" alt="github" class="size-10 text-white">
                                 </a>
                             </div>
                         </div>
@@ -506,67 +724,300 @@
                 </div>
 
                 <!-- tiago -->
-                <div class="flex flex-col md:flex-row gap-7 items-center py-5 md:py-12 md:pr-0 border-b border-gray-500 md:border-none reveal">
-                    <div class="flex flex-col md:w-7/12">
-                        <h3 class="text-3xl sm:text-4xl md:text-5xl 2xl:text-7xl font-semibold mb-4 sm:mb-6 leading-tight uppercase">Tiago Silva</h3>
-                        <p class="text-xl max-w-[1300px] sm:text-2xl md:text-3xl lg:text-3xl opacity-60 font-extralight mb-8 sm:mb-16">
-                        Desenvolvedor Júnior e QA Tester.
-                        </p>
+                <div class="flex flex-col items-center md:flex-row md:h-[120vh] py-5 md:py-0 border-b border-gray-500 md:border-none reveal md:pr-0">
+                    <div class="flex flex-col md:w-7/12 md:px-12 2xl:px-[150px]">
+                        <h3 class="text-3xl sm:text-4xl md:text-5xl 2xl:text-7xl font-semibold mb-4 sm:mb-6 leading-tight uppercase">Victor Lara</h3>
                         <div class="md:hidden w-full h-64 overflow-hidden rounded-md reveal mb-4">
-                            <img src="./assets/tiago.enc" alt="tiago" class="w-full h-full object-cover object-top">
+                            <img src="./assets/victor.jpg" alt="victor" class="w-full h-full object-cover">
                         </div> 
-                        <p>Experiência de mais de três anos em desenvolvimento.</p>
+                        <p class="text-xl max-w-[1300px] sm:text-2xl md:text-3xl lg:text-3xl opacity-60 font-extralight mb-8 ">
+                        Gestor de operações, Analista de Dados e Líder Geral.
+                        </p>
+                        
+                        <!-- Texto adicional sobre experiência -->
+                        <div class="space-y-6 mb-8">
+                            <div class="flex items-start gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                                <p class="text-md 2xl:text-xl">Profissional com sólida experiência em gestão de operações e análise de dados, especializado em otimizar processos e aumentar a eficiência operacional.</p>
+                            </div>
+                            
+                            <div class="flex items-start gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                                </svg>
+                                <p class="text-md 2xl:text-xl">Expertise em transformar dados complexos em insights acionáveis para tomada de decisões estratégicas.</p>
+                            </div>
+                            
+                            <div class="flex items-start gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                                <p class="text-md 2xl:text-xl">Liderança de equipes multifuncionais com foco no desenvolvimento de talentos e na criação de ambientes colaborativos.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Seção de Habilidades -->
+                        <div class="mb-10">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <!-- Hard Skills -->
+                                <div class="">
+                                    <h5 class="text-xl font-medium mb-4 flex items-center gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                                        </svg>
+                                        Hard Skills
+                                    </h5>
+                                    <ul class="space-y-2">
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Análise de Dados e Business Intelligence
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Gestão de Operações e Processos
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Ferramentas de Análise (SQL, Python, Power BI)
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Gestão de Projetos e Metodologias Ágeis
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <!-- Soft Skills -->
+                                <div class="">
+                                    <h5 class="text-xl font-medium mb-4 flex items-center gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                        </svg>
+                                        Soft Skills
+                                    </h5>
+                                    <ul class="space-y-2">
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Liderança e Gestão de Equipes
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Comunicação Eficaz
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Resolução de Problemas Complexos
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Pensamento Estratégico
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Adaptabilidade e Resiliência
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                         <div class="flex gap-8 items-center">
-                            <div class="flex items-center gap-4 mt-5">
-                                <a href="mailto:teste@gmail.com" class="rounded-full cursor-pointer transition-all duration-300">
-                                    <img src="./assets/gmail.png" alt="linkedin" srcset="" class="size-10 text-white">
+                            <div class="flex items-center gap-4 md:mt-0">
+                                <a href="https://www.linkedin.com/in/victor-lara-76b797b7/" class="rounded-full cursor-pointer transition-all duration-300 hover:scale-110">
+                                    <img src="./assets/linkedin.png" alt="linkedin" srcset="" class="size-10 text-white">
                                 </a>
                             </div>
-                            <div class="flex items-center gap-4 mt-5">
-                                <a href="https://github.com/tiagoelrick" class="rounded-full cursor-pointer transition-all duration-300">
-                                    <img src="./assets/github.png" alt="gmail" srcset="" class="size-10 text-white">
+                            <div class="flex items-center gap-4 md:mt-0">
+                                <a href="mailto:victormkt.vdesign@gmail.com" class="rounded-full cursor-pointer transition-all duration-300 hover:scale-110">
+                                    <img src="./assets/gmail.png" alt="gmail" srcset="" class="size-10 text-white">
+                                </a>
+                            </div>
+                            <div class="flex items-center gap-4 md:mt-0">
+                                <a href="https://github.com/victorvdesign-dot" class="rounded-full cursor-pointer transition-all duration-300 hover:scale-110">
+                                    <img src="./assets/github.png" alt="github" srcset="" class="size-10 text-white">
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="hidden md:flex md:w-5/12 h-96 overflow-hidden rounded-md reveal">
-                        <img src="./assets/tiago.enc" alt="tiago" class="w-full h-full object-cover object-top">
+
+                    <div class="hidden md:flex md:w-5/12 h-96 md:h-full overflow-hidden rounded-md reveal">
+                        <img src="./assets/victor.jpg" alt="victor" class="w-full h-full object-cover">
                     </div> 
                 </div>
 
                 <!-- gabriel -->
-                <div class="flex flex-col md:flex-row gap-7 items-center py-5 md:py-12 border-b border-gray-500 md:border-none reveal md:pl-0">
-                    <div class="hidden md:flex md:w-5/12 h-96 overflow-hidden rounded-md reveal">
-                        <img src="./assets/gabriel3.jpg" alt="gabriel" class="w-full h-full object-cover">
+                <div class="flex flex-col md:flex-row md:h-[120vh] gap-7 items-center py-5 md:py-12 border-b border-gray-500 md:border-none reveal md:pl-0">
+                    <div class="hidden md:flex md:w-5/12 h-96 md:h-full overflow-hidden rounded-md reveal">
+                        <img src="./assets/gabriel3.jpg" alt="gabriel" class="w-full h-full object-cover object-[30%_center]">
                     </div> 
-                    <div class="flex flex-col md:w-7/12">
+                    <div class="flex flex-col md:w-7/12 md:px-12 2xl:px-[150px]">
                         <h3 class="text-3xl sm:text-4xl md:text-5xl 2xl:text-7xl font-semibold mb-4 sm:mb-6 leading-tight uppercase">Gabriel Baumann</h3>
                         <div class="md:hidden w-full h-64 overflow-hidden rounded-md reveal mb-4">
                             <img src="./assets/gabriel3.jpg" alt="gabriel" class="w-full h-full object-cover">
                         </div> 
-                        <p class="text-xl max-w-[1300px] sm:text-2xl md:text-3xl lg:text-3xl opacity-60 font-extralight mb-8 sm:mb-16">
-                        Desenvolvedor Front End e UI/UX Designer
+                        <p class="text-xl max-w-[1300px] sm:text-2xl md:text-3xl lg:text-3xl opacity-60 font-extralight mb-8 ">
+                        Desenvolvedor Front-end, UI/UX Designer e Especialista em Experiência do Usuário.
                         </p>
-                        <p>Cursando Sistemas de Informação pela UFRA. Possui experiência de um ano e meio em desenvolvimento.</p>
+                        
+                        <!-- Texto adicional sobre experiência -->
+                        <div class="space-y-6 mb-8">
+                            <div class="flex items-start gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                                <p class="text-md 2xl:text-xl">Desenvolvedor Front-end com mais de 1 ano e meio de experiência especializado em criar interfaces responsivas e experiências de usuário excepcionais.</p>
+                            </div>
+                            
+                            <div class="flex items-start gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                                </svg>
+                                <p class="text-md 2xl:text-xl">Responsável pelo desenvolvimento front-end responsivo de projetos como "Ofício Fácil", "SINE 360" e este portfólio da equipe.</p>
+                            </div>
+                            
+                            <div class="flex items-start gap-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                                <p class="text-md 2xl:text-xl">Cursando Sistemas de Informação pela UFRA, com planos de se tornar um desenvolvedor Full Stack explorando tecnologias como Node.js e React.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Seção de Habilidades -->
+                        <div class="mb-10">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <!-- Hard Skills -->
+                                <div class="">
+                                    <h5 class="text-xl font-medium mb-4 flex items-center gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                                        </svg>
+                                        Hard Skills
+                                    </h5>
+                                    <ul class="space-y-2">
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 极速赛车开奖直播 历史记录 开奖结果走势图【官网】7" />
+                                            </svg>
+                                            HTML5, CSS3 e JavaScript (ES6+)
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Tailwind CSS e Frameworks Front-end
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="极速赛车开奖直播 历史记录 开奖结果走势图【官网】none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13极速赛车开奖直播 历史记录 开奖结果走势图【官网】l4 4L19 7" />
+                                            </svg>
+                                            Design Responsivo e Mobile-First
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Controle de Versão (Git e GitHub)
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            UI/UX Design e Prototipagem
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <!-- Soft Skills -->
+                                <div class="">
+                                    <h5 class="text-xl font-medium mb-4 flex items-center gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c极速赛车开奖直播 历史记录 开奖结果走势图【官网】0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 极速赛车开奖直播 历史记录 开奖结果走势图【官网】0 11-6 0 3 3 0 016 0zm极速赛车开奖直播 历史记录 开奖结果走势图【官网】6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                        </svg>
+                                        Soft Skills
+                                    </h5>
+                                    <ul class="space-y-2">
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Excelente Comunicador e Apresentador
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Visão Aprimorada de Experiência do Usuário
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green极速赛车开奖直播 历史记录 开奖结果走势图【官网】-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Capacidade de Traduzir Ideias em Designs
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Aprendizado Contínuo e Adaptabilidade
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            </svg>
+                                            Trabalho em Equipe e Colaboração
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <div class="flex gap-8 items-center">
-                            <div class="flex items-center gap-4 mt-5">
-                                <a href="https://www.linkedin.com/in/gabrielbaumann/" class="rounded-full cursor-pointer transition-all duration-300">
-                                    <img src="./assets/linkedin.png" alt="linkedin" srcset="" class="size-10 text-white">
+                            <div class="flex items-center gap-4 md:mt-0">
+                                <a href="https://www.linkedin.com/in/gabriel-silva" class="rounded-full cursor-pointer transition-all duration-300 hover:scale-110">
+                                    <img src="./assets/linkedin.png" alt="linkedin" class="size-10 text-white">
                                 </a>
                             </div>
-                            <div class="flex items-center gap-4 mt-5">
-                                <a href="mailto:gabrielgoncalves238@gmail.com" class="rounded-full cursor-pointer transition-all duration-300">
-                                    <img src="./assets/gmail.png" alt="gmail" srcset="" class="size-10 text-white">
+                            <div class="flex items-center gap-4 md:mt-0">
+                                <a href="mailto:gabriel.frontend@example.com" class="rounded-full cursor-pointer transition-all duration-300 hover:scale-110">
+                                    <img src="./assets/gmail.png" alt="gmail" class="size-10 text-white">
                                 </a>
                             </div>
-                            <div class="flex items-center gap-4 mt-5">
-                                <a href="https://github.com/GabrielBaumann" class="rounded-full cursor-pointer transition-all duration-300">
-                                    <img src="./assets/github.png" alt="gmail" srcset="" class="size-10 text-white">
+                            <div class="flex items-center gap-4 md:mt-0">
+                                <a href="https://github.com/gabriel-frontend" class="rounded-full cursor-pointer transition-all duration-300 hover:scale-110">
+                                    <img src="./assets/github.png" alt="github" class="size-10 text-white">
+                                </a>
+                            </div>
+                            <div class="flex items-center gap-4 md:mt-0">
+                                <a href="https://dribbble.com/gabriel-ui" class="rounded-full cursor-pointer transition-all duration-300 hover:scale-110">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-pink-500" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm7.5 12c-1.1 0-2.1.3-3 .8-.2-.5-.4-1.1-.6-1.6.9-.6 1.5-1.6 1.5-2.8 0-2.1-1.7-3.8-3.8-3.8-2.1 0-3.8 1.7-3.8 3.8 0 .3 0 .6.1.9-.7-.1-1.4-.2-2.1-.2-1.5 0-2.9.4-4.1 1.1.3-.7.7-1.3 1.2-1.9 1.2-1.3 2.9-2.1 4.8-2.1 1.5 0 2.9.5 4 1.3.2-1 1-1.7 2-1.7 1.1 0 2 .9 2 2s-.9 2-2 2c-.4 0-.8-.1-1.1-.3-.9.8-1.5 1.9-1.8 3.1-.7.3-1.5.5-2.3.5-.5 0-1-.1-1.5-.2-.1.4-.2.9-.2 1.3 0 2.1 1.7 3.8 3.8 3.8 2.1 0 3.8-1.7 3.8-3.8v-.3c.5-.3 1.1-.5 1.7-.5 1.1 0 2 .9 2 2s-.9 2-2 2z"/>
+                                    </svg>
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                 </div>
+
             </div>
 
         </div>
