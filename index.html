@@ -50,87 +50,86 @@
 
     <!-- home -->
     <div class="flex flex-col">
-        <header class="bg-gray-950 p-1 text-sm text-white flex justify-center gap-2">Faz parte da equipe? Acesse a <span class="underline cursor-pointer font-semibold">Área Admin</span></header>
 
         <!-- Seção Hero -->
         <section class="relative min-h-screen overflow-hidden">
             
             <!-- Imagem de fundo -->
             <div class="absolute inset-0 z-0">
-                <img src="./assets/cover.jpg" alt="cover" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-black/50"></div>
+                <!-- <div class="absolute bg-blue-100 h-[1px] w-full top-[60%]"></div>
+                <div class="absolute bg-blue-100 h-[1px] w-full top-[65%]"></div>
+                <div class="absolute bg-blue-100 w-[1px] h-full right-[25%]"></div>
+                <div class="absolute bg-blue-100 w-[1px] h-full right-[28%]"></div> -->
+
+                <img src="./assets/cover.jpg" alt="cover" class="w-full h-full object-cover object-[center_10%]">
+                <div class="absolute inset-0 bg-gradient-to-b from-gray-950 via-black/20 to-gray-950"></div>
             </div>
 
-            <!-- Header -->
-            <header class="relative z-10 container mx-auto md:px-12 md:py-6">
-                <div class="flex justify-between items-center">
-                    <div class="flex items-center hidden md:flex">
-                        <div class="mr-4 w-12 h-12 sm:w-16 sm:h-16">
-                            <img src="./assets/cerberus.png" alt="Cerberus Logo" class="w-full h-full object-contain">
+            <div class="flex flex-col justify-between h-screen">
+                <!-- Header -->
+                <header class="relative z-10 md:px-12 md:py-6">
+                    <div class="flex w-full justify-between items-center">
+                        <div class="flex items-center hidden md:flex">
+                            <div class="text-xl sm:text-2xl font-normal text-white font-['Xirod']">Cerberus</div>
                         </div>
-                        <div class="text-xl sm:text-2xl font-normal text-white font-['Xirod']">Cerberus</div>
-                    </div>
-                    <nav id="desktop-nav" class="hidden md:flex items-center space-x-4 lg:space-x-8">
-                        <a href="#about" class="transition-all duration-300 text-white hover:text-gray-300 hover:underline underline-offset-8 text-2xl">Sobre</a>
-                        <a href="#projects" class="transition-all duration-300 hover:underline underline-offset-8 text-white hover:text-gray-200 text-2xl hover:text-gray-300">Projetos</a>
-                        <a href="#people" class="transition-all duration-300 hover:underline underline-offset-8 text-white hover:text-gray-200 text-2xl hover:text-gray-300">Equipe</a>
-                        <a href="#gallery" class="transition-all duration-300 hover:underline underline-offset-8 text-white hover:text-gray-200 text-2xl hover:text-gray-300">Galeria</a>
-                        <a href="#people" class="transition-all duration-300 md:px-5 md:py-2 bg-white text-gray-900 rounded-full hover:bg-black hover:text-white font-semibold text-xl">Contato</a>
-                    </nav>
-                    
-                    <!-- mobile menu -->
-                    <div class="flex flex-col w-full md:hidden">
-                        <div class="flex w-full items-top justify-between">
-                            <img src="./assets/cerberus.png" alt="Cerberus Logo" class="md:hidden size-[100px] object-contain pl-3">
-                            <button onclick="toggleMenu()" class="p-5 pt-7 h-[100px] flex flex-col gap-3 items-end justify-left">
-                                <div class="bg-white w-[30px] h-[2px]"></div>
-                                <div class="bg-white w-[45px] h-[2px]"></div>
-                                <div class="bg-white w-full h-[2px]"></div>
-                            </button>
+                        <nav id="desktop-nav" class="hidden md:flex items-center space-x-12 uppercase">
+                            <a href="#about" class="transition-all duration-300 text-white hover:text-gray-300 hover:underline underline-offset-8 text-2xl">Sobre</a>
+                            <a href="#projects" class="transition-all duration-300 hover:underline underline-offset-8 text-white hover:text-gray-200 text-2xl hover:text-gray-300">Projetos</a>
+                            <a href="#people" class="transition-all duration-300 hover:underline underline-offset-8 text-white hover:text-gray-200 text-2xl hover:text-gray-300">Equipe</a>
+                            <a href="#gallery" class="transition-all duration-300 hover:underline underline-offset-8 text-white hover:text-gray-200 text-2xl hover:text-gray-300">Galeria</a>
+                        </nav>
+                        <div class="md:flex items-center gap-12 hidden uppercase">
+                            <a href="#" class="transition-all duration-300 hover:underline underline-offset-8 text-white hover:text-gray-200 text-xl hover:text-gray-300 underline">admin</a>
+                            <a href="#people" class="transition-all duration-300 md:px-5 md:py-2 bg-gray-200 text-gray-900 rounded-full hover:bg-black hover:text-white font-semibold text-xl hidden md:flex">Contato</a>
                         </div>
-                        <div id="mobile-menu" class="hidden absolute mt-12 -mr-12 flex flex-col p-12 w-full">
-                            <div class="z-99 rounded-md bg-black p-5 flex flex-col gap-5 text-xl font-semibold justify-center text-center transition-all duration-300">
-                                <div class="border-b border-gray-500 pb-2"><a href="#about" onclick="toggleMenu()">Sobre</a></div>
-                                <div class="border-b border-gray-500 pb-2 "><a href="#projects" onclick="toggleMenu()">Projetos</a></div>
-                                <div class="border-b border-gray-500 pb-2"><a href="#people" onclick="toggleMenu()">Equipe</a></div>
-                                <div class="border-b border-gray-500 pb-2"><a href="#gallery" onclick="toggleMenu()">Galeria</a></div>
-                                <div class="pb-2"><a href="#contact" onclick="toggleMenu()">Contato</a></div>
+                
+                        <!-- mobile menu -->
+                        <div class="flex flex-col w-full md:hidden">
+                            <div class="flex w-full items-top justify-between">
+                                <img src="./assets/cerberus.png" alt="Cerberus Logo" class="md:hidden size-[100px] object-contain pl-3">
+                                <button onclick="toggleMenu()" class="p-5 pt-7 h-[100px] flex flex-col gap-3 items-end justify-left">
+                                    <div class="bg-white w-[30px] h-[2px]"></div>
+                                    <div class="bg-white w-[45px] h-[2px]"></div>
+                                    <div class="bg-white w-full h-[2px]"></div>
+                                </button>
+                            </div>
+                            <div id="mobile-menu" class="hidden absolute mt-12 -mr-12 flex flex-col p-12 w-full">
+                                <div class="z-99 rounded-md bg-black p-5 flex flex-col gap-5 text-xl font-semibold justify-center text-center transition-all duration-300">
+                                    <div class="border-b border-gray-500 pb-2"><a href="#about" onclick="toggleMenu()">Sobre</a></div>
+                                    <div class="border-b border-gray-500 pb-2 "><a href="#projects" onclick="toggleMenu()">Projetos</a></div>
+                                    <div class="border-b border-gray-500 pb-2"><a href="#people" onclick="toggleMenu()">Equipe</a></div>
+                                    <div class="border-b border-gray-500 pb-2"><a href="#gallery" onclick="toggleMenu()">Galeria</a></div>
+                                    <div class="pb-2"><a href="#contact" onclick="toggleMenu()">Contato</a></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </header>
-        
-            <!-- Conteúdo Hero -->
-            <div class="z-2 relative container mx-auto px-6 sm:px-12 flex flex-col justify-center -mt-8 mb-10 2xl:min-h-[calc(100vh-90px)] min-h-[100vh]">
-                <div class="max-w-4xl">
-                    <h1 class="[text-shadow:_2px_2px_4px_rgb(0_0_0_/_50%)] text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light mb-8 md:mb-8 2xl:mb-20 leading-tight">
-                        Transformamos ideias em
-                        <span id="futuro" class="word ml-2 md:ml-5">futuro</span>
-                        <span id="projetos" class="word ml-2 md:ml-5">projetos</span>
-                        <span id="negocio" class="word ml-2 md:ml-5">negócios</span>
-                        <span id="realidade" class="word ml-2 md:ml-5">realidade</span>
-                    </h1>
-                    <p class="text-xl sm:text-2xl opacity-90 mb-6 md:mb-4 2xl:mb-8 font-extralight reveal">
-                        Soluções inovadoras <br>para impulsionar <br>negócios no mundo digital.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 sm:gap-4 reveal">
-                        <a href="#people" class="flex items-center justify-center px-6 py-3 sm:px-8 sm:py-2 bg-white text-black text-lg sm:text-xl font-semibold rounded-full hover:bg-black hover:text-white transition-all duration-300">
-                            Contato
-                        </a>
-                        <a href="#about" class="flex items-center justify-center px-6 py-3 sm:px-8 sm:py-2 border-2 border-white text-white text-lg sm:text-xl font-semibold rounded-full hover:bg-white hover:text-black transition duration-300">
-                            Saiba mais
-                        </a>
+                </header>
+                
+                <!-- Conteúdo Hero -->
+                <div class="z-2 relative px-6 sm:px-12 w-full">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between">
+                        <h1 class="[text-shadow:_2px_2px_4px_rgb(0_0_0_/_50%)] text-white text-4xl max-w-3xl text-5xl md:text-8xl 2xl:text-9xl font-light mb-8 md:mb-8 2xl:mb-20 leading-tight">
+                            Transformamos ideias<br class="md:hidden"> em
+                            <span id="futuro" class="word ml-2 md:ml-5 text-gray-200">futuro</span>
+                            <span id="projetos" class="word ml-2 md:ml-5 text-gray-200">projetos</span>
+                            <span id="negocio" class="word ml-2 md:ml-5 text-gray-200">negócios</span>
+                            <span id="realidade" class="word ml-2 md:ml-5 text-gray-200">realidade</span>
+                        </h1>
+                        <p class="text-md md:text-3xl mb-6 md:mb-0 2xl:mb-0 font-extralight reveal text-gray-300">
+                            Soluções inovadoras <br>para impulsionar <br>negócios no mundo digital.
+                        </p>
                     </div>
                 </div>
             </div>
+
         </section>
     </div>
     
     <!-- about -->
-    <section id="about" class="bg-gray-950 rounded-t-3xl sm:rounded-t-[60px] relative z-10 -mt-20 sm:-mt-40 pt-16 sm:pt-24">
+    <section id="about" class="bg-gray-950 pt-16 sm:pt-24">
 
-        <div class="container mx-auto px-4 sm:px-12 pb-0 py-20 pt-0">
+        <div class="container md:mx-auto  px-4 md:px-0 pb-0 py-20 pt-0">
             <div class="flex flex-col lg:flex-row justify-between items-start mb-12 lg:mb-24">
                 <div class="lg:w-2/3 mb-8 lg:mb-0">
                     <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mb-4 sm:mb-6 leading-tight reveal">
